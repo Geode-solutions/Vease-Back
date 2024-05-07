@@ -1,0 +1,10 @@
+__pycache__
+.env
+env
+venv
+tests
+uploads
+.vscode
+lock
+Architecture.drawio
+Architecture.svg
