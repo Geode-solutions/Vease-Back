@@ -138,3 +138,6 @@ __pycache__
 .vscode
 uploads
 schemas.json
+geodeapp_back.egg-info
+lock
+time

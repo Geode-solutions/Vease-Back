@@ -1,2 +1,0 @@
-geodeapp_back
-tests
