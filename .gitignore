@@ -141,3 +141,4 @@ schemas.json
 geodeapp_back.egg-info
 lock
 time
+build

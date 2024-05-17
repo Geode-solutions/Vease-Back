@@ -24,7 +24,7 @@ classifiers = [
 "Bug Tracker" = "https://github.com/Geode-solutions/geodeapp_back/issues"
 
 [project.scripts]
-run_server = "geodeapp_back.app:run_server"
+geodeapp_server = "geodeapp_back.app:run_server"
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}

@@ -16,6 +16,6 @@ RUN apt-get update && apt-get install -y wget
 
 ENV GEODE_LICENSE_LOCATION=/server/geode.lic
 
-CMD "run_server"
+CMD "geodeapp_server"
 
 EXPOSE 5000
