@@ -1,0 +1,2 @@
+[console_scripts]
+run_server = geodeapp_back.app:run_server
