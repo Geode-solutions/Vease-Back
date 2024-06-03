@@ -2,6 +2,29 @@
 
 
 
+## v0.0.1-rc.1 (2024-06-03)
+
+### Fix
+
+* fix(deps): update ([`a78f033`](https://github.com/Geode-solutions/GeodeApp-Back/commit/a78f033c0fc8622d114a36d02aeab067c0723361))
+
+### Unknown
+
+* Merge pull request #3 from Geode-solutions/fix/update_og_dependencies
+
+fix(deps): update ([`1e9dba9`](https://github.com/Geode-solutions/GeodeApp-Back/commit/1e9dba9ed83d41d70d427c173dc46a5ab403b245))
+
+* Merge branch &#39;next&#39; into fix/update_og_dependencies ([`7ad4dae`](https://github.com/Geode-solutions/GeodeApp-Back/commit/7ad4daef6e971ddc4c524f98b32adf9bef5d33b6))
+
+* Merge pull request #2 from Geode-solutions/feat_back_tao
+
+ogwback ([`7fc34ed`](https://github.com/Geode-solutions/GeodeApp-Back/commit/7fc34edcabbc7355f513c4bf77b6091a0f7846f1))
+
+* Merge branch &#39;next&#39; into feat_back_tao ([`dd5af09`](https://github.com/Geode-solutions/GeodeApp-Back/commit/dd5af09492e2bb2cd739e08baeeeefd1dc1e8ac7))
+
+* ogwback ([`b65c716`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b65c716d011bac01e5cc9c1ebd393955fe145f6f))
+
+
 ## v0.0.0 (2024-05-17)
 
 ### Unknown
