@@ -2,6 +2,15 @@
 
 
 
+## v0.1.0 (2024-06-14)
+
+### Unknown
+
+* Merge pull request #6 from Geode-solutions/next
+
+Next ([`e4bd663`](https://github.com/Geode-solutions/GeodeApp-Back/commit/e4bd6636bd6740ebd51c3bd065b6908c7f478734))
+
+
 ## v0.1.0-rc.1 (2024-06-14)
 
 ### Feature
