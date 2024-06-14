@@ -90,15 +90,19 @@ flask_cors.CORS(app, origins=ORIGINS)
 def errorhandler(e):
     return handle_exception(e)
 
-
-@app.route("/geodeapp/createbackend", methods=["POST"])
-def create_backend():
-    return flask.make_response({"ID": str("123456")}, 200)
-
-
 @app.route("/", methods=["POST"])
 def root():
     return flask.make_response({"ID": str("123456")}, 200)
+
+@app.route("/ping", methods=["POST"])
+def ping():
+    LOCK_FOLDER = flask.current_app.config["LOCK_FOLDER"]
+    if not os.path.exists(LOCK_FOLDER):
+        os.mkdir(LOCK_FOLDER)
+    if not os.path.isfile(LOCK_FOLDER + "/ping.txt"):
+        f = open(LOCK_FOLDER + "/ping.txt", "a")
+        f.close()
+    return flask.make_response({"message": "Flask server is running"}, 200)
 
 
 def run_server():
