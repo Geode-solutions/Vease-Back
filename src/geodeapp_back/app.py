@@ -90,6 +90,10 @@ flask_cors.CORS(app, origins=ORIGINS)
 def errorhandler(e):
     return handle_exception(e)
 
+@app.route("/", methods=["POST"])
+def root():
+    return flask.make_response({"ID": str("123456")}, 200)
+
 @app.route("/ping", methods=["POST"])
 def ping():
     LOCK_FOLDER = flask.current_app.config["LOCK_FOLDER"]
