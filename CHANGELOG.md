@@ -2,6 +2,27 @@
 
 
 
+## v0.1.0-rc.1 (2024-06-14)
+
+### Feature
+
+* feat(app): add ping route ([`4106146`](https://github.com/Geode-solutions/GeodeApp-Back/commit/4106146681b731e6df78ffe836e551a9c5adbe18))
+
+### Fix
+
+* fix(server): update run command ([`b390f97`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b390f9765030be8d23332443a17e2cd462950170))
+
+### Unknown
+
+* Merge pull request #5 from Geode-solutions/fix_ping_and_run_command
+
+Fix ping and run command ([`e248223`](https://github.com/Geode-solutions/GeodeApp-Back/commit/e248223d19161aca06674a81569a8fdaa5114a0b))
+
+* revert root ([`55bb056`](https://github.com/Geode-solutions/GeodeApp-Back/commit/55bb056fe20c9d2094a241e28ce12f0bdbb50866))
+
+*  ([`7791832`](https://github.com/Geode-solutions/GeodeApp-Back/commit/77918325f07a9b267337831d175e5f9eca533687))
+
+
 ## v0.0.1 (2024-06-03)
 
 ### Unknown
