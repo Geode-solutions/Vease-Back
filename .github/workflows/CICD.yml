@@ -14,6 +14,7 @@ jobs:
       - name: Test
         run: |
           pip install -r requirements.txt
+          pip install .
           pip install pytest
           pytest
   build:
