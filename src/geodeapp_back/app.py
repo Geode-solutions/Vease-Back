@@ -15,7 +15,7 @@ from werkzeug.exceptions import HTTPException
 
 from werkzeug.exceptions import HTTPException
 
-from .config import *
+from geodeapp_back.config import *
 from opengeodeweb_back.geode_functions import handle_exception
 
 
