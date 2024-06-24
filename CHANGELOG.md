@@ -1,6 +1,24 @@
 # CHANGELOG
 
+## v0.1.1-rc.1 (2024-06-24)
 
+### Fix
+
+* fix(CICD): pip install . ([`5390d02`](https://github.com/Geode-solutions/GeodeApp-Back/commit/5390d0212722fe52cca1d49636ad8fe7f274fea4))
+
+* fix(relative import): test with python 3.10 ([`c5a8093`](https://github.com/Geode-solutions/GeodeApp-Back/commit/c5a80931c431074f184a04355f5669f340a7d410))
+
+* fix(relative import): fix all import bugs ([`79f1708`](https://github.com/Geode-solutions/GeodeApp-Back/commit/79f17084db965aeb2360fbc6bf10edefaa86bc1a))
+
+* fix(relative import): bug in prod ([`06a53a7`](https://github.com/Geode-solutions/GeodeApp-Back/commit/06a53a744260c0bce89b955e06295940934e7353))
+
+### Unknown
+
+* Merge pull request #7 from Geode-solutions/fix/relative_import_bug
+
+fix(relative import): bug in prod ([`2fdf4a5`](https://github.com/Geode-solutions/GeodeApp-Back/commit/2fdf4a5bcf4754999d4adea32549fe352ab7a838))
+
+*  ([`f179adb`](https://github.com/Geode-solutions/GeodeApp-Back/commit/f179adb2f985bdd27e067e41372de806abc84f97))
 
 ## v0.1.0 (2024-06-14)
 
@@ -9,7 +27,6 @@
 * Merge pull request #6 from Geode-solutions/next
 
 Next ([`e4bd663`](https://github.com/Geode-solutions/GeodeApp-Back/commit/e4bd6636bd6740ebd51c3bd065b6908c7f478734))
-
 
 ## v0.1.0-rc.1 (2024-06-14)
 
@@ -31,7 +48,6 @@ Fix ping and run command ([`e248223`](https://github.com/Geode-solutions/GeodeAp
 
 *  ([`7791832`](https://github.com/Geode-solutions/GeodeApp-Back/commit/77918325f07a9b267337831d175e5f9eca533687))
 
-
 ## v0.0.1 (2024-06-03)
 
 ### Unknown
@@ -39,7 +55,6 @@ Fix ping and run command ([`e248223`](https://github.com/Geode-solutions/GeodeAp
 * Merge pull request #4 from Geode-solutions/next
 
 Next ([`25fc719`](https://github.com/Geode-solutions/GeodeApp-Back/commit/25fc7193fc969a0a697ce83338713cc62de60eda))
-
 
 ## v0.0.1-rc.1 (2024-06-03)
 
@@ -62,7 +77,6 @@ ogwback ([`7fc34ed`](https://github.com/Geode-solutions/GeodeApp-Back/commit/7fc
 * Merge branch &#39;next&#39; into feat_back_tao ([`dd5af09`](https://github.com/Geode-solutions/GeodeApp-Back/commit/dd5af09492e2bb2cd739e08baeeeefd1dc1e8ac7))
 
 * ogwback ([`b65c716`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b65c716d011bac01e5cc9c1ebd393955fe145f6f))
-
 
 ## v0.0.0 (2024-05-17)
 

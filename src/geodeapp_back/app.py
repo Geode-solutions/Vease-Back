@@ -1,22 +1,18 @@
-""" Packages """
-
+# Global packages
 import os
 import dotenv
-
-import flask
-import flask_cors
 import time
 
-
+# Third parties
+import flask
+import flask_cors
 from opengeodeweb_back import geode_functions
 from opengeodeweb_back.routes import blueprint_routes
-
+from werkzeug.exceptions import HTTPException
 from werkzeug.exceptions import HTTPException
 
-from werkzeug.exceptions import HTTPException
-
-from .config import *
-from opengeodeweb_back.geode_functions import handle_exception
+# Local libraries
+from geodeapp_back import config
 
 
 if os.path.isfile("./.env"):
@@ -61,9 +57,9 @@ FLASK_DEBUG = True if os.environ.get("FLASK_DEBUG", default=None) == "True" else
 
 
 if FLASK_DEBUG == False:
-    app.config.from_object(ProdConfig)
+    app.config.from_object(config.ProdConfig)
 else:
-    app.config.from_object(DevConfig)
+    app.config.from_object(config.DevConfig)
 
 ID = app.config.get("ID")
 PORT = int(app.config.get("PORT"))
@@ -88,7 +84,7 @@ flask_cors.CORS(app, origins=ORIGINS)
 
 @app.errorhandler(HTTPException)
 def errorhandler(e):
-    return handle_exception(e)
+    return geode_functions.handle_exception(e)
 
 @app.route("/", methods=["POST"])
 def root():
