@@ -104,6 +104,7 @@ def run_server():
     parser.add_argument('-d', '--debug', default=FLASK_DEBUG, help='Whether to run in debug mode', action='store_true')
     parser.add_argument('-dfp', '--data_folder_path', type=str, default=DEFAULT_DATA_FOLDER_PATH, help='Path to the folder where data is stored')
     args = parser.parse_args()
+    app.config.update(DATA_FOLDER_PATH=args.data_folder_path)
     print(f"Port: {args.port}, Debug: {args.debug}, Data folder path: {args.data_folder_path}", flush=True)
     app.run(debug=args.debug, host="0.0.0.0", port=args.port, ssl_context=SSL)
 
