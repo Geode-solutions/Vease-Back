@@ -1,6 +1,6 @@
 # Global packages
+import argparse
 import os
-import dotenv
 import time
 
 # Third parties
@@ -14,10 +14,6 @@ from werkzeug.exceptions import HTTPException
 # Local libraries
 from geodeapp_back import config
 
-
-if os.path.isfile("./.env"):
-    basedir = os.path.abspath(os.path.dirname(__file__))
-    dotenv.load_dotenv(os.path.join(basedir, ".env"))
 
 """ Global config """
 app = flask.Flask(__name__)
@@ -62,7 +58,8 @@ else:
     app.config.from_object(config.DevConfig)
 
 ID = app.config.get("ID")
-PORT = int(app.config.get("PORT"))
+DEFAULT_PORT = int(app.config.get("DEFAULT_PORT"))
+DEFAULT_DATA_FOLDER_PATH = app.config.get("DEFAULT_DATA_FOLDER_PATH")
 ORIGINS = app.config.get("ORIGINS")
 SSL = app.config.get("SSL")
 LOCK_FOLDER = app.config.get("LOCK_FOLDER")
@@ -102,8 +99,14 @@ def ping():
 
 
 def run_server():
-    print(f"Python is running in {FLASK_DEBUG} mode")
-    app.run(debug=FLASK_DEBUG, host="0.0.0.0", port=PORT, ssl_context=SSL)
+    parser = argparse.ArgumentParser(prog='GeodeApp-Back', description='Backend server for GeodeApp')
+    parser.add_argument('-p', '--port', type=int, default=DEFAULT_PORT, help='Port to listen on')
+    parser.add_argument('-d', '--debug', default=FLASK_DEBUG, help='Whether to run in debug mode', action='store_true')
+    parser.add_argument('-dfp', '--data_folder_path', type=str, default=DEFAULT_DATA_FOLDER_PATH, help='Path to the folder where data is stored')
+    args = parser.parse_args()
+    app.config.update(DATA_FOLDER_PATH=args.data_folder_path)
+    print(f"Port: {args.port}, Debug: {args.debug}, Data folder path: {args.data_folder_path}", flush=True)
+    app.run(debug=args.debug, host="0.0.0.0", port=args.port, ssl_context=SSL)
 
 
 # ''' Main '''

@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v0.2.0-rc.1 (2024-07-17)
+
+### Feature
+
+* feat(cli): add args ([`3f12506`](https://github.com/Geode-solutions/GeodeApp-Back/commit/3f125064ce5da5aa9481c541d1cde9e20f587f15))
+
+### Unknown
+
+* Merge pull request #10 from Geode-solutions/feat/cli
+
+feat(cli): add args ([`b4c3618`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b4c36182229d1369e9d2969c89ce023229488785))
+
+* update app config w/ data_folder_path ([`ead8860`](https://github.com/Geode-solutions/GeodeApp-Back/commit/ead8860b35784f2b086ad886fb656f4d26097b82))
+
+*  ([`cde0a4d`](https://github.com/Geode-solutions/GeodeApp-Back/commit/cde0a4da1702b816fd2b42530be9a5e83bd7d271))
+
 ## v0.1.1 (2024-06-24)
 
 ### Unknown
