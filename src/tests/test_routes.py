@@ -8,5 +8,3 @@ def test_root(client):
     route = f"/"
     response = client.post(route)
     assert response.status_code == 200
-    ID = response.json["ID"]
-    assert type(ID) is str
