@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## v0.3.0-rc.1 (2024-08-26)
+
+### Feature
+
+* feat(app): desktop mode and dynamic origins ([`e585396`](https://github.com/Geode-solutions/GeodeApp-Back/commit/e5853968df1bf5df6f31c4f0c09d78636c953d00))
+
+### Unknown
+
+* Merge pull request #12 from Geode-solutions/feat/cli_options
+
+Feat/cli options ([`116456a`](https://github.com/Geode-solutions/GeodeApp-Back/commit/116456a01cd825c78ddffc7aa2c086ecf9e4495c))
+
+* remove unused config ([`8356fa8`](https://github.com/Geode-solutions/GeodeApp-Back/commit/8356fa80054cc64ab53cb07dbbd0510540cfa72f))
+
+* fix tests ([`49ef547`](https://github.com/Geode-solutions/GeodeApp-Back/commit/49ef5470abcc08958879072ce2a41bcea4b2d1f5))
+
+*  ([`c46416a`](https://github.com/Geode-solutions/GeodeApp-Back/commit/c46416ab6a2c12944a73fbcf059d420d7d5df70a))
+
 ## v0.2.0 (2024-07-18)
 
 ### Unknown
