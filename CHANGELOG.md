@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v0.3.0-rc.2 (2024-09-02)
+
+### Fix
+
+* fix(deps): opengeodeweb-back 5.0.0 ([`431c141`](https://github.com/Geode-solutions/GeodeApp-Back/commit/431c141e262712bf31680e856685bd9d52180bd9))
+
+### Unknown
+
+* Merge pull request #13 from Geode-solutions/fix/update_deps
+
+fix(deps): opengeodeweb-back 5.0.0 ([`50a4f48`](https://github.com/Geode-solutions/GeodeApp-Back/commit/50a4f48c9fe41668dd8995382f920dfaf4ebee19))
+
 ## v0.3.0-rc.1 (2024-08-26)
 
 ### Feature
