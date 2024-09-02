@@ -1,5 +1,35 @@
 # CHANGELOG
 
+## v0.3.0-rc.2 (2024-09-02)
+
+### Fix
+
+* fix(deps): opengeodeweb-back 5.0.0 ([`431c141`](https://github.com/Geode-solutions/GeodeApp-Back/commit/431c141e262712bf31680e856685bd9d52180bd9))
+
+### Unknown
+
+* Merge pull request #13 from Geode-solutions/fix/update_deps
+
+fix(deps): opengeodeweb-back 5.0.0 ([`50a4f48`](https://github.com/Geode-solutions/GeodeApp-Back/commit/50a4f48c9fe41668dd8995382f920dfaf4ebee19))
+
+## v0.3.0-rc.1 (2024-08-26)
+
+### Feature
+
+* feat(app): desktop mode and dynamic origins ([`e585396`](https://github.com/Geode-solutions/GeodeApp-Back/commit/e5853968df1bf5df6f31c4f0c09d78636c953d00))
+
+### Unknown
+
+* Merge pull request #12 from Geode-solutions/feat/cli_options
+
+Feat/cli options ([`116456a`](https://github.com/Geode-solutions/GeodeApp-Back/commit/116456a01cd825c78ddffc7aa2c086ecf9e4495c))
+
+* remove unused config ([`8356fa8`](https://github.com/Geode-solutions/GeodeApp-Back/commit/8356fa80054cc64ab53cb07dbbd0510540cfa72f))
+
+* fix tests ([`49ef547`](https://github.com/Geode-solutions/GeodeApp-Back/commit/49ef5470abcc08958879072ce2a41bcea4b2d1f5))
+
+*  ([`c46416a`](https://github.com/Geode-solutions/GeodeApp-Back/commit/c46416ab6a2c12944a73fbcf059d420d7d5df70a))
+
 ## v0.2.0 (2024-07-18)
 
 ### Unknown
