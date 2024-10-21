@@ -25,6 +25,7 @@ if FLASK_DEBUG == False:
 else:
     app.config.from_object(app_config.DevConfig)
 
+DEFAULT_HOST = app.config.get("DEFAULT_HOST")
 DEFAULT_PORT = int(app.config.get("DEFAULT_PORT"))
 DEFAULT_DATA_FOLDER_PATH = app.config.get("DEFAULT_DATA_FOLDER_PATH")
 DESKTOP_APP = app.config.get("DESKTOP_APP")
@@ -52,6 +53,7 @@ def root():
 
 def run_server():
     parser = argparse.ArgumentParser(prog='GeodeApp-Back', description='Backend server for GeodeApp')
+    parser.add_argument('-h', '--host', type=int, default=DEFAULT_HOST, help='Host to run on')
     parser.add_argument('-p', '--port', type=int, default=DEFAULT_PORT, help='Port to listen on')
     parser.add_argument('-d', '--debug', default=FLASK_DEBUG, help='Whether to run in debug mode', action='store_true')
     parser.add_argument('-dfp', '--data_folder_path', type=str, default=DEFAULT_DATA_FOLDER_PATH, help='Path to the folder where data is stored')
