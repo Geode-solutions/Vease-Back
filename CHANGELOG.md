@@ -1,5 +1,32 @@
 # CHANGELOG
 
+
+## v0.4.0 (2024-10-17)
+
+### Unknown
+
+* Merge pull request #16 from Geode-solutions/next
+
+Next ([`ab9605e`](https://github.com/Geode-solutions/GeodeApp-Back/commit/ab9605e8abf92e47551091c4b3efa16f6d5ac9ab))
+
+
+## v0.4.0-rc.1 (2024-10-17)
+
+### Features
+
+* feat(io): add support for ImplicitCrossSection & ImplicitStructuralModel ([`8cab095`](https://github.com/Geode-solutions/GeodeApp-Back/commit/8cab095f9b61f6add53a455c64767a828dfcd7ad))
+
+### Unknown
+
+* Merge pull request #15 from Geode-solutions/feat/update_ecosystem
+
+feat(io): add support for ImplicitCrossSection & ImplicitStructuralModel ([`1589040`](https://github.com/Geode-solutions/GeodeApp-Back/commit/15890400b34186d5db879e06831770da055d3707))
+
+* Merge branch 'next' into feat/update_ecosystem ([`9c11b54`](https://github.com/Geode-solutions/GeodeApp-Back/commit/9c11b54d82f9350f4767c8db555ad125bb04b5ed))
+
+*  ([`7f6fba4`](https://github.com/Geode-solutions/GeodeApp-Back/commit/7f6fba48e2ae531a9c4591b16f034287c84843e8))
+
+
 ## v0.3.0 (2024-09-02)
 
 ### Unknown
@@ -8,9 +35,10 @@
 
 Next ([`68dc751`](https://github.com/Geode-solutions/GeodeApp-Back/commit/68dc7514cad5f4243a3a091be8a98f1960673692))
 
+
 ## v0.3.0-rc.2 (2024-09-02)
 
-### Fix
+### Fixes
 
 * fix(deps): opengeodeweb-back 5.0.0 ([`431c141`](https://github.com/Geode-solutions/GeodeApp-Back/commit/431c141e262712bf31680e856685bd9d52180bd9))
 
@@ -20,9 +48,10 @@ Next ([`68dc751`](https://github.com/Geode-solutions/GeodeApp-Back/commit/68dc75
 
 fix(deps): opengeodeweb-back 5.0.0 ([`50a4f48`](https://github.com/Geode-solutions/GeodeApp-Back/commit/50a4f48c9fe41668dd8995382f920dfaf4ebee19))
 
+
 ## v0.3.0-rc.1 (2024-08-26)
 
-### Feature
+### Features
 
 * feat(app): desktop mode and dynamic origins ([`e585396`](https://github.com/Geode-solutions/GeodeApp-Back/commit/e5853968df1bf5df6f31c4f0c09d78636c953d00))
 
@@ -38,6 +67,7 @@ Feat/cli options ([`116456a`](https://github.com/Geode-solutions/GeodeApp-Back/c
 
 *  ([`c46416a`](https://github.com/Geode-solutions/GeodeApp-Back/commit/c46416ab6a2c12944a73fbcf059d420d7d5df70a))
 
+
 ## v0.2.0 (2024-07-18)
 
 ### Unknown
@@ -46,9 +76,10 @@ Feat/cli options ([`116456a`](https://github.com/Geode-solutions/GeodeApp-Back/c
 
 Next ([`ea18d6f`](https://github.com/Geode-solutions/GeodeApp-Back/commit/ea18d6fa81722d2df593a8455171fd85c191dfd3))
 
+
 ## v0.2.0-rc.1 (2024-07-17)
 
-### Feature
+### Features
 
 * feat(cli): add args ([`3f12506`](https://github.com/Geode-solutions/GeodeApp-Back/commit/3f125064ce5da5aa9481c541d1cde9e20f587f15))
 
@@ -62,6 +93,7 @@ feat(cli): add args ([`b4c3618`](https://github.com/Geode-solutions/GeodeApp-Bac
 
 *  ([`cde0a4d`](https://github.com/Geode-solutions/GeodeApp-Back/commit/cde0a4da1702b816fd2b42530be9a5e83bd7d271))
 
+
 ## v0.1.1 (2024-06-24)
 
 ### Unknown
@@ -70,9 +102,10 @@ feat(cli): add args ([`b4c3618`](https://github.com/Geode-solutions/GeodeApp-Bac
 
 Next ([`b83ac7e`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b83ac7ed3b020d98c6d55b5224f68611f52aeb56))
 
+
 ## v0.1.1-rc.1 (2024-06-24)
 
-### Fix
+### Fixes
 
 * fix(CICD): pip install . ([`5390d02`](https://github.com/Geode-solutions/GeodeApp-Back/commit/5390d0212722fe52cca1d49636ad8fe7f274fea4))
 
@@ -90,6 +123,7 @@ fix(relative import): bug in prod ([`2fdf4a5`](https://github.com/Geode-solution
 
 *  ([`f179adb`](https://github.com/Geode-solutions/GeodeApp-Back/commit/f179adb2f985bdd27e067e41372de806abc84f97))
 
+
 ## v0.1.0 (2024-06-14)
 
 ### Unknown
@@ -98,13 +132,14 @@ fix(relative import): bug in prod ([`2fdf4a5`](https://github.com/Geode-solution
 
 Next ([`e4bd663`](https://github.com/Geode-solutions/GeodeApp-Back/commit/e4bd6636bd6740ebd51c3bd065b6908c7f478734))
 
+
 ## v0.1.0-rc.1 (2024-06-14)
 
-### Feature
+### Features
 
 * feat(app): add ping route ([`4106146`](https://github.com/Geode-solutions/GeodeApp-Back/commit/4106146681b731e6df78ffe836e551a9c5adbe18))
 
-### Fix
+### Fixes
 
 * fix(server): update run command ([`b390f97`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b390f9765030be8d23332443a17e2cd462950170))
 
@@ -118,6 +153,7 @@ Fix ping and run command ([`e248223`](https://github.com/Geode-solutions/GeodeAp
 
 *  ([`7791832`](https://github.com/Geode-solutions/GeodeApp-Back/commit/77918325f07a9b267337831d175e5f9eca533687))
 
+
 ## v0.0.1 (2024-06-03)
 
 ### Unknown
@@ -126,9 +162,10 @@ Fix ping and run command ([`e248223`](https://github.com/Geode-solutions/GeodeAp
 
 Next ([`25fc719`](https://github.com/Geode-solutions/GeodeApp-Back/commit/25fc7193fc969a0a697ce83338713cc62de60eda))
 
+
 ## v0.0.1-rc.1 (2024-06-03)
 
-### Fix
+### Fixes
 
 * fix(deps): update ([`a78f033`](https://github.com/Geode-solutions/GeodeApp-Back/commit/a78f033c0fc8622d114a36d02aeab067c0723361))
 
@@ -138,15 +175,16 @@ Next ([`25fc719`](https://github.com/Geode-solutions/GeodeApp-Back/commit/25fc71
 
 fix(deps): update ([`1e9dba9`](https://github.com/Geode-solutions/GeodeApp-Back/commit/1e9dba9ed83d41d70d427c173dc46a5ab403b245))
 
-* Merge branch &#39;next&#39; into fix/update_og_dependencies ([`7ad4dae`](https://github.com/Geode-solutions/GeodeApp-Back/commit/7ad4daef6e971ddc4c524f98b32adf9bef5d33b6))
+* Merge branch 'next' into fix/update_og_dependencies ([`7ad4dae`](https://github.com/Geode-solutions/GeodeApp-Back/commit/7ad4daef6e971ddc4c524f98b32adf9bef5d33b6))
 
 * Merge pull request #2 from Geode-solutions/feat_back_tao
 
 ogwback ([`7fc34ed`](https://github.com/Geode-solutions/GeodeApp-Back/commit/7fc34edcabbc7355f513c4bf77b6091a0f7846f1))
 
-* Merge branch &#39;next&#39; into feat_back_tao ([`dd5af09`](https://github.com/Geode-solutions/GeodeApp-Back/commit/dd5af09492e2bb2cd739e08baeeeefd1dc1e8ac7))
+* Merge branch 'next' into feat_back_tao ([`dd5af09`](https://github.com/Geode-solutions/GeodeApp-Back/commit/dd5af09492e2bb2cd739e08baeeeefd1dc1e8ac7))
 
 * ogwback ([`b65c716`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b65c716d011bac01e5cc9c1ebd393955fe145f6f))
+
 
 ## v0.0.0 (2024-05-17)
 
