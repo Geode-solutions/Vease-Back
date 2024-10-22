@@ -1,6 +1,21 @@
 # CHANGELOG
 
 
+## v0.4.1-rc.3 (2024-10-22)
+
+### Bug Fixes
+
+* fix(semantic): empty commit ([`5936c8d`](https://github.com/Geode-solutions/GeodeApp-Back/commit/5936c8d65e8a790b79421257369f16fa49fb64c8))
+
+### Unknown
+
+* Merge pull request #19 from Geode-solutions/fix/host
+
+Fix/host ([`dc17d1a`](https://github.com/Geode-solutions/GeodeApp-Back/commit/dc17d1aa9f70fe0b1edbd451fde44a9bfe948ac6))
+
+* Merge branch 'next' into fix/host ([`41bb4e3`](https://github.com/Geode-solutions/GeodeApp-Back/commit/41bb4e35435ef8cd89adb96bb4b828640468ab75))
+
+
 ## v0.4.1-rc.2 (2024-10-22)
 
 ### Unknown
@@ -9,10 +24,16 @@
 
 Fix/host ([`e01afa2`](https://github.com/Geode-solutions/GeodeApp-Back/commit/e01afa26593e2bff3e4cc56a3bd4faedebc775b5))
 
+* Merge branch 'fix/host' of https://github.com/Geode-solutions/GeodeApp-Back into fix/host ([`838e56f`](https://github.com/Geode-solutions/GeodeApp-Back/commit/838e56f7f18e37676d88627e80076993d8252932))
+
 * Merge branch 'next' into fix/host ([`1d2b71d`](https://github.com/Geode-solutions/GeodeApp-Back/commit/1d2b71d5aa8a7983ea6e9869c2c90838c7d0358c))
 
 
 ## v0.4.1-rc.1 (2024-10-21)
+
+### Bug Fixes
+
+* fix(host): app runs on host ([`352279a`](https://github.com/Geode-solutions/GeodeApp-Back/commit/352279a5c3cc59ed429ab5eb93d3dc278b4710e5))
 
 ### Unknown
 
