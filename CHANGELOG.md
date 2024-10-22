@@ -1,6 +1,15 @@
 # CHANGELOG
 
 
+## v0.4.1 (2024-10-22)
+
+### Unknown
+
+* Merge pull request #21 from Geode-solutions/next
+
+Next ([`25d78db`](https://github.com/Geode-solutions/GeodeApp-Back/commit/25d78db0913288c3d94fc81e2e796a00d88f1f85))
+
+
 ## v0.4.1-rc.4 (2024-10-22)
 
 ### Unknown
