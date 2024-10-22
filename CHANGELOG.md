@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v0.4.1-rc.1 (2024-10-21)
+
+### Unknown
+
+* Merge pull request #17 from Geode-solutions/fix/host
+
+Fix/host ([`37711ff`](https://github.com/Geode-solutions/GeodeApp-Back/commit/37711ff2295ccbfab1131df9c41de13c04f4fc52))
+
+* Merge branch 'next' into fix/host ([`dda64c1`](https://github.com/Geode-solutions/GeodeApp-Back/commit/dda64c1f4a15ddd40d9457c039e70df5faacc159))
+
+*  ([`e245c95`](https://github.com/Geode-solutions/GeodeApp-Back/commit/e245c95431554d4bfb62ec19c85066bc53d7c6b6))
+
+
 ## v0.4.0 (2024-10-17)
 
 ### Unknown
@@ -11,6 +24,10 @@ Next ([`ab9605e`](https://github.com/Geode-solutions/GeodeApp-Back/commit/ab9605
 
 
 ## v0.4.0-rc.1 (2024-10-17)
+
+### Bug Fixes
+
+* fix(host): update opengeodeweb-back ([`b5b5a3c`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b5b5a3c6174bafad0aa555df9850911f3ba9d233))
 
 ### Features
 
@@ -23,6 +40,8 @@ Next ([`ab9605e`](https://github.com/Geode-solutions/GeodeApp-Back/commit/ab9605
 feat(io): add support for ImplicitCrossSection & ImplicitStructuralModel ([`1589040`](https://github.com/Geode-solutions/GeodeApp-Back/commit/15890400b34186d5db879e06831770da055d3707))
 
 * Merge branch 'next' into feat/update_ecosystem ([`9c11b54`](https://github.com/Geode-solutions/GeodeApp-Back/commit/9c11b54d82f9350f4767c8db555ad125bb04b5ed))
+
+* add host argument ([`117032c`](https://github.com/Geode-solutions/GeodeApp-Back/commit/117032c813f6be9085d96d56e0726319c0f76818))
 
 *  ([`7f6fba4`](https://github.com/Geode-solutions/GeodeApp-Back/commit/7f6fba48e2ae531a9c4591b16f034287c84843e8))
 
@@ -38,7 +57,7 @@ Next ([`68dc751`](https://github.com/Geode-solutions/GeodeApp-Back/commit/68dc75
 
 ## v0.3.0-rc.2 (2024-09-02)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): opengeodeweb-back 5.0.0 ([`431c141`](https://github.com/Geode-solutions/GeodeApp-Back/commit/431c141e262712bf31680e856685bd9d52180bd9))
 
@@ -105,7 +124,7 @@ Next ([`b83ac7e`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b83ac7
 
 ## v0.1.1-rc.1 (2024-06-24)
 
-### Fixes
+### Bug Fixes
 
 * fix(CICD): pip install . ([`5390d02`](https://github.com/Geode-solutions/GeodeApp-Back/commit/5390d0212722fe52cca1d49636ad8fe7f274fea4))
 
@@ -135,13 +154,13 @@ Next ([`e4bd663`](https://github.com/Geode-solutions/GeodeApp-Back/commit/e4bd66
 
 ## v0.1.0-rc.1 (2024-06-14)
 
+### Bug Fixes
+
+* fix(server): update run command ([`b390f97`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b390f9765030be8d23332443a17e2cd462950170))
+
 ### Features
 
 * feat(app): add ping route ([`4106146`](https://github.com/Geode-solutions/GeodeApp-Back/commit/4106146681b731e6df78ffe836e551a9c5adbe18))
-
-### Fixes
-
-* fix(server): update run command ([`b390f97`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b390f9765030be8d23332443a17e2cd462950170))
 
 ### Unknown
 
@@ -165,7 +184,7 @@ Next ([`25fc719`](https://github.com/Geode-solutions/GeodeApp-Back/commit/25fc71
 
 ## v0.0.1-rc.1 (2024-06-03)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): update ([`a78f033`](https://github.com/Geode-solutions/GeodeApp-Back/commit/a78f033c0fc8622d114a36d02aeab067c0723361))
 
