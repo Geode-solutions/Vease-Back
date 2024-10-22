@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v0.4.1-rc.2 (2024-10-22)
+
+### Unknown
+
+* Merge pull request #18 from Geode-solutions/fix/host
+
+Fix/host ([`e01afa2`](https://github.com/Geode-solutions/GeodeApp-Back/commit/e01afa26593e2bff3e4cc56a3bd4faedebc775b5))
+
+* Merge branch 'next' into fix/host ([`1d2b71d`](https://github.com/Geode-solutions/GeodeApp-Back/commit/1d2b71d5aa8a7983ea6e9869c2c90838c7d0358c))
+
+
 ## v0.4.1-rc.1 (2024-10-21)
 
 ### Unknown
@@ -8,6 +19,8 @@
 * Merge pull request #17 from Geode-solutions/fix/host
 
 Fix/host ([`37711ff`](https://github.com/Geode-solutions/GeodeApp-Back/commit/37711ff2295ccbfab1131df9c41de13c04f4fc52))
+
+* Merge branch 'fix/host' of https://github.com/Geode-solutions/GeodeApp-Back into fix/host ([`22978ae`](https://github.com/Geode-solutions/GeodeApp-Back/commit/22978ae810ae45e125b8cb88b90f6494add60e0e))
 
 * Merge branch 'next' into fix/host ([`dda64c1`](https://github.com/Geode-solutions/GeodeApp-Back/commit/dda64c1f4a15ddd40d9457c039e70df5faacc159))
 
@@ -26,6 +39,8 @@ Next ([`ab9605e`](https://github.com/Geode-solutions/GeodeApp-Back/commit/ab9605
 ## v0.4.0-rc.1 (2024-10-17)
 
 ### Bug Fixes
+
+* fix(conflicting args): & print host ([`35454fa`](https://github.com/Geode-solutions/GeodeApp-Back/commit/35454fad95be31f0999c2dfbb0dee4b107466c73))
 
 * fix(host): update opengeodeweb-back ([`b5b5a3c`](https://github.com/Geode-solutions/GeodeApp-Back/commit/b5b5a3c6174bafad0aa555df9850911f3ba9d233))
 
