@@ -53,7 +53,7 @@ def root():
 
 def run_server():
     parser = argparse.ArgumentParser(prog='GeodeApp-Back', description='Backend server for GeodeApp')
-    parser.add_argument('-h', '--host', type=int, default=DEFAULT_HOST, help='Host to run on')
+    parser.add_argument('--host', type=str, default=DEFAULT_HOST, help='Host to run on')
     parser.add_argument('-p', '--port', type=int, default=DEFAULT_PORT, help='Port to listen on')
     parser.add_argument('-d', '--debug', default=FLASK_DEBUG, help='Whether to run in debug mode', action='store_true')
     parser.add_argument('-dfp', '--data_folder_path', type=str, default=DEFAULT_DATA_FOLDER_PATH, help='Path to the folder where data is stored')
@@ -63,7 +63,7 @@ def run_server():
     app.config.update(DATA_FOLDER_PATH=args.data_folder_path)
     app.config.update(DESKTOP_APP=args.desktop)
     flask_cors.CORS(app, origins=args.allowed_origin)
-    print(f"Port: {args.port}, Debug: {args.debug}, Data folder path: {args.data_folder_path}, Desktop mode: {args.desktop}, Origins: {args.allowed_origin}", flush=True)
+    print(f"Host: {args.host}, Port: {args.port}, Debug: {args.debug}, Data folder path: {args.data_folder_path}, Desktop mode: {args.desktop}, Origins: {args.allowed_origin}", flush=True)
     app.run(debug=args.debug, host="0.0.0.0", port=args.port, ssl_context=SSL)
 
 
