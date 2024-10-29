@@ -52,7 +52,7 @@ def root():
     return flask.make_response({}, 200)
 
 def run_server():
-    parser = argparse.ArgumentParser(prog='GeodeApp-Back', description='Backend server for GeodeApp')
+    parser = argparse.ArgumentParser(prog='Vease-Back', description='Backend server for Vease')
     parser.add_argument('--host', type=str, default=DEFAULT_HOST, help='Host to run on')
     parser.add_argument('-p', '--port', type=int, default=DEFAULT_PORT, help='Port to listen on')
     parser.add_argument('-d', '--debug', default=FLASK_DEBUG, help='Whether to run in debug mode', action='store_true')

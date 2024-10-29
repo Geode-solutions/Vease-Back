@@ -1,5 +1,5 @@
 import pytest
-from src.geodeapp_back.app import app
+from src.vease_back.app import app
 
 
 @pytest.fixture
