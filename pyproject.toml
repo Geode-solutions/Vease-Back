@@ -24,7 +24,7 @@ classifiers = [
 "Bug Tracker" = "https://github.com/Geode-solutions/Vease-back/issues"
 
 [project.scripts]
-vease_back = "vease_back.app:run_server"
+vease-back = "vease_back.app:run_server"
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
