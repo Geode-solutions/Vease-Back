@@ -1,6 +1,15 @@
 # CHANGELOG
 
 
+## v1.0.0 (2024-10-29)
+
+### Unknown
+
+* Merge pull request #24 from Geode-solutions/next
+
+Next ([`7e3c447`](https://github.com/Geode-solutions/Vease-Back/commit/7e3c447dab9d563836823b5b59c6205df949497b))
+
+
 ## v1.0.0-rc.1 (2024-10-29)
 
 ### Breaking
