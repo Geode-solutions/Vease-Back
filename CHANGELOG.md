@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v1.0.0-rc.1 (2024-10-29)
+
+### Breaking
+
+* fix(repo): rename to vease
+
+BREAKING CHANGE: changes cli command to vease-back ([`046236f`](https://github.com/Geode-solutions/Vease-Back/commit/046236f8148d4ce7b399c113a258214e9bb7e77b))
+
+### Unknown
+
+*  ([`0317196`](https://github.com/Geode-solutions/Vease-Back/commit/03171966727d9eead45fa5c0f9c4993d87293d2b))
+
+
 ## v0.4.2 (2024-10-29)
 
 ### Unknown
