@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "geodeapp_back"
+name = "vease_back"
 version = "0.4.1"
 dynamic = ["dependencies"]
 authors = [
@@ -20,11 +20,11 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/Geode-solutions/geodeapp-back"
-"Bug Tracker" = "https://github.com/Geode-solutions/geodeapp-back/issues"
+"Homepage" = "https://github.com/Geode-solutions/Vease-back"
+"Bug Tracker" = "https://github.com/Geode-solutions/Vease-back/issues"
 
 [project.scripts]
-geodeapp_back = "geodeapp_back.app:run_server"
+vease-back = "vease_back.app:run_server"
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
