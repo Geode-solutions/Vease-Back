@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
+## v1.0.2-rc.2 (2024-12-02)
+
+
 ## v1.0.2-rc.1 (2024-11-28)
+
+### Bug Fixes
+
+- **deps**: Opengeodeweb-back 5.4.0
+  ([`2a22f14`](https://github.com/Geode-solutions/Vease-Back/commit/2a22f14dec7266d39216b6941340b0ee0a5cc250))
 
 
 ## v1.0.1 (2024-11-08)
@@ -31,6 +39,10 @@
   ([`046236f`](https://github.com/Geode-solutions/Vease-Back/commit/046236f8148d4ce7b399c113a258214e9bb7e77b))
 
 BREAKING CHANGE: changes cli command to vease-back
+
+### BREAKING CHANGES
+
+- **repo**: Changes cli command to vease-back
 
 
 ## v0.4.2 (2024-10-29)
@@ -136,14 +148,14 @@ BREAKING CHANGE: changes cli command to vease-back
 - **CICD**: Pip install .
   ([`5390d02`](https://github.com/Geode-solutions/Vease-Back/commit/5390d0212722fe52cca1d49636ad8fe7f274fea4))
 
-- **relative import**: Test with python 3.10
-  ([`c5a8093`](https://github.com/Geode-solutions/Vease-Back/commit/c5a80931c431074f184a04355f5669f340a7d410))
+- **relative import**: Bug in prod
+  ([`06a53a7`](https://github.com/Geode-solutions/Vease-Back/commit/06a53a744260c0bce89b955e06295940934e7353))
 
 - **relative import**: Fix all import bugs
   ([`79f1708`](https://github.com/Geode-solutions/Vease-Back/commit/79f17084db965aeb2360fbc6bf10edefaa86bc1a))
 
-- **relative import**: Bug in prod
-  ([`06a53a7`](https://github.com/Geode-solutions/Vease-Back/commit/06a53a744260c0bce89b955e06295940934e7353))
+- **relative import**: Test with python 3.10
+  ([`c5a8093`](https://github.com/Geode-solutions/Vease-Back/commit/c5a80931c431074f184a04355f5669f340a7d410))
 
 
 ## v0.1.0 (2024-06-14)
