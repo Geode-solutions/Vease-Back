@@ -1,0 +1,7 @@
+{
+    "$id": "/vease/versions",
+    "route": "/versions",
+    "methods": ["GET"],
+    "type": "object",
+    "additionalProperties": false
+  }
