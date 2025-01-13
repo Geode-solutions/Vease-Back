@@ -12,7 +12,7 @@ from werkzeug.exceptions import HTTPException
 from werkzeug.exceptions import HTTPException
 
 # Local libraries
-import src.vease_back.routes.blueprint_vease as blueprint_vease
+import vease_back.routes.blueprint_vease as blueprint_vease
 
 """ Global config """
 app = flask.Flask(__name__)
