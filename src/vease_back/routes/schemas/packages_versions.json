@@ -1,6 +1,6 @@
 {
-    "$id": "/vease/versions",
-    "route": "/versions",
+    "$id": "/vease/packages_versions",
+    "route": "/packages_versions",
     "methods": ["GET"],
     "type": "object",
     "additionalProperties": false
