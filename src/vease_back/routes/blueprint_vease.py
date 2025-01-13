@@ -25,16 +25,18 @@ def versions():
     utils_functions.validate_request(flask.request, vease_versions_json)
     list_packages = [
         "OpenGeode-core",
-        "OpenGeode-IO",
-        "OpenGeode-Inspector",
         "OpenGeode-Geosciences",
         "OpenGeode-GeosciencesIO",
-        "Geode-Viewables",
-        "Geode-Numerics",
-        "Geode-Simplex",
+        "OpenGeode-Inspector",
+        "OpenGeode-IO",
+        "Geode-Background",
+        "Geode-Common",
+        "Geode-Conversion",
         "Geode-Explicit",
         "Geode-Implicit",
-        "Geode-Common",
+        "Geode-Numerics",
+        "Geode-Simplex",
+        "Geode-Viewables",
     ]
     return flask.make_response(
         {"versions": utils_functions.versions(list_packages)}, 200
