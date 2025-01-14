@@ -41,7 +41,7 @@ app.register_blueprint(
 
 app.register_blueprint(
     blueprint_vease.routes,
-    url_prefix="/vease",
+    url_prefix="/vease_back",
     name="vease",
 )
 
