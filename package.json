@@ -1,7 +1,7 @@
 {
   "name": "@geode/vease-back",
   "scripts": {
-    "json": "node ./node_modules/@geode/opengeodeweb-back/generate_schemas.js vease_back routes route /"
+    "json": "npm explore @geode/opengeodeweb-back -- npm run json vease_back routes route /"
   },
   "dependencies": {
     "@geode/opengeodeweb-back": "5.4.1"
