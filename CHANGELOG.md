@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v1.1.0-rc.1 (2025-01-14)
+
+### Features
+
+- **routes**: Add packages versions
+  ([`601ff0b`](https://github.com/Geode-solutions/Vease-Back/commit/601ff0b8accfaf218b26d95e6c9c489c27f58b11))
+
+- **versions**: Route/tests/schemas
+  ([`355caf6`](https://github.com/Geode-solutions/Vease-Back/commit/355caf6c55ce01242ac6e3923867a9ad548b64ff))
+
+
 ## v1.0.2 (2024-12-02)
 
 
