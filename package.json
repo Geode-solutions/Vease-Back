@@ -1,5 +1,7 @@
 {
   "name": "@geode/vease-back",
+  "version": "0.0.0-semantically-released",
+  "description": "",
   "scripts": {
     "json": "node ./node_modules/@geode/opengeodeweb-back/generate_schemas.js vease_back routes route /"
   },
@@ -12,8 +14,6 @@
       "require": "./schemas.json"
     }
   },
-  "version": "0.0.0-semantically-released",
-  "description": "",
   "main": "generate_schemas.js",
   "repository": {
     "type": "git",
