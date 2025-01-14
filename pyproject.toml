@@ -32,6 +32,9 @@ dependencies = {file = ["requirements.txt"]}
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+"vease_back.routes.schemas" = ["*.json"]
+
 [tool.semantic_release]
 version_toml = [
     "pyproject.toml:project.version",

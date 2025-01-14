@@ -1,18 +1,18 @@
 # Global packages
 import argparse
 import os
-import time
 
 # Third parties
 import flask
 import flask_cors
 from flask_cors import cross_origin
-from opengeodeweb_back import geode_functions, utils_functions, app_config
+from opengeodeweb_back import utils_functions, app_config
 from opengeodeweb_back.routes import blueprint_routes
 from werkzeug.exceptions import HTTPException
 from werkzeug.exceptions import HTTPException
 
 # Local libraries
+import vease_back.routes.blueprint_vease as blueprint_vease
 
 """ Global config """
 app = flask.Flask(__name__)
@@ -37,6 +37,12 @@ app.register_blueprint(
     blueprint_routes.routes,
     url_prefix="/opengeodeweb_back",
     name="opengeodeweb_back",
+)
+
+app.register_blueprint(
+    blueprint_vease.routes,
+    url_prefix="/vease_back",
+    name="vease",
 )
 
 if FLASK_DEBUG == False:
