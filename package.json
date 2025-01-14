@@ -1,0 +1,38 @@
+{
+  "name": "@geode/vease-back",
+  "version": "0.0.0-semantically-released",
+  "description": "",
+  "scripts": {
+    "json": "node ./node_modules/@geode/opengeodeweb-back/generate_schemas.js vease_back routes route /"
+  },
+  "dependencies": {
+    "@geode/opengeodeweb-back": "5.4.1"
+  },
+  "exports": {
+    "./schemas.json": {
+      "import": "./schemas.json",
+      "require": "./schemas.json"
+    }
+  },
+  "main": "generate_schemas.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geode-solutions/Vease-Back.git"
+  },
+  "author": {
+    "name": "Geode-solutions",
+    "email": "contact@geode-solutions.com",
+    "url": "https://geode-solutions.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Geode-solutions/Vease-Back/issues"
+  },
+  "homepage": "https://github.com/Geode-solutions/Vease-Back",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "schemas.json"
+  ]
+}
