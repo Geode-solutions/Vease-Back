@@ -122,7 +122,7 @@ opengeode-io==7.0.9
     #   geode-viewables
     #   opengeode-geosciencesio
     #   opengeodeweb-back
-opengeodeweb-back==5.4.3
+opengeodeweb-back==5.5.0
     # via -r requirements.in
 referencing==0.36.2
     # via
