@@ -1,10 +1,24 @@
 # CHANGELOG
 
 
+## v1.1.3-rc.1 (2025-02-13)
+
+
 ## v1.1.2 (2025-01-26)
 
 
 ## v1.1.2-rc.1 (2025-01-26)
+
+### Bug Fixes
+
+- **dependencies**: Upgrade
+  ([`dd19f26`](https://github.com/Geode-solutions/Vease-Back/commit/dd19f2636d4eca8a2e77947ba3b41340a2b7d37b))
+
+- **deps**: Update
+  ([`0a50342`](https://github.com/Geode-solutions/Vease-Back/commit/0a5034209f2d6e5e7d6f90b0b8d9fa09ff6a10b7))
+
+- **deps**: Update ogw-back master
+  ([`ea226f3`](https://github.com/Geode-solutions/Vease-Back/commit/ea226f305510cb8f4e1aa01c3f0274fc0fb3fc13))
 
 
 ## v1.1.1 (2025-01-22)
@@ -21,9 +35,6 @@
 ## v1.1.1-rc.1 (2025-01-22)
 
 ### Bug Fixes
-
-- **dependencies**: Upgrade
-  ([`dd19f26`](https://github.com/Geode-solutions/Vease-Back/commit/dd19f2636d4eca8a2e77947ba3b41340a2b7d37b))
 
 - **ecosystem**: Update
   ([`7fb8f86`](https://github.com/Geode-solutions/Vease-Back/commit/7fb8f866f293e7c0bf134f55781d403f848ddfe4))
@@ -85,7 +96,7 @@
 
 BREAKING CHANGE: changes cli command to vease-back
 
-### BREAKING CHANGES
+### Breaking Changes
 
 - **repo**: Changes cli command to vease-back
 
