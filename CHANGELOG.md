@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.1.4-rc.1 (2025-02-17)
+
+### Bug Fixes
+
+- **docker_image**: Install repo as package
+  ([`8a94d51`](https://github.com/Geode-solutions/Vease-Back/commit/8a94d51b9b324ac1ae53f52f495a61a0395764ca))
+
+
 ## v1.1.3 (2025-02-13)
 
 
