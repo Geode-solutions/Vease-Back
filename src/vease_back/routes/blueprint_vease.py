@@ -15,6 +15,9 @@ with open(os.path.join(schemas, "packages_versions.json"), "r") as file:
 with open(os.path.join(schemas, "microservice_version.json"), "r") as file:
     microservice_version_json = json.load(file)
 
+with open(os.path.join(schemas, "healthcheck.json"), "r") as file:
+    healthcheck_json = json.load(file)
+
 
 routes = flask.Blueprint("vease_routes", __name__)
 flask_cors.CORS(routes)
@@ -55,3 +58,8 @@ def microservice_version():
         {"microservice_version": utils_functions.versions(list_packages)[0]["version"]},
         200,
     )
+
+
+@routes.route(healthcheck_json["route"], methods=healthcheck_json["methods"])
+def healthcheck():
+    return flask.make_response({"message": "healthy"}, 200)
