@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.2.0-rc.1 (2025-02-18)
+
+### Features
+
+- **routes**: Healthcheck
+  ([`f26ca4b`](https://github.com/Geode-solutions/Vease-Back/commit/f26ca4b32e5cddfa30bdebb3fd64bdcc4de6d4b4))
+
+
 ## v1.1.4-rc.1 (2025-02-17)
 
 ### Bug Fixes
