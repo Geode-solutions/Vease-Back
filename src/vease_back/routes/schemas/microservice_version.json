@@ -1,5 +1,5 @@
 {
-    "$id": "/vease_back/microservice_version",
+    "$id": "/microservice_version",
     "route": "/microservice_version",
     "methods": ["GET"],
     "type": "object",

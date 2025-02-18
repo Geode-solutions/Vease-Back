@@ -1,5 +1,5 @@
 {
-    "$id": "/vease_back/packages_versions",
+    "$id": "/packages_versions",
     "route": "/packages_versions",
     "methods": ["GET"],
     "type": "object",
