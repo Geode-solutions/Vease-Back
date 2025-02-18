@@ -11,7 +11,7 @@ def test_root(client):
 
 
 def test_packages_versions(client):
-    route = f"/packages_versions"
+    route = f"/vease_back/packages_versions"
     response = client.get(route)
     assert response.status_code == 200
     packages_versions = response.json["packages_versions"]
@@ -22,7 +22,7 @@ def test_packages_versions(client):
 
 
 def test_microservice_version(client):
-    route = f"/microservice_version"
+    route = f"/vease_back/microservice_version"
     response = client.get(route)
     assert response.status_code == 200
     microservice_version = response.json["microservice_version"]
@@ -31,7 +31,7 @@ def test_microservice_version(client):
 
 
 def test_healthcheck(client):
-    route = f"/healthcheck"
+    route = f"/vease_back/healthcheck"
     response = client.get(route)
     assert response.status_code == 200
     message = response.json["message"]

@@ -1,5 +1,5 @@
 {
-    "$id": "/healthcheck",
+    "$id": "/vease_back/healthcheck",
     "route": "/healthcheck",
     "methods": ["GET"],
     "type": "object",
