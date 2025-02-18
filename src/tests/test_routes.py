@@ -28,3 +28,12 @@ def test_microservice_version(client):
     microservice_version = response.json["microservice_version"]
     print(type(microservice_version), microservice_version, flush=True)
     assert type(microservice_version) is str
+
+
+def test_healthcheck(client):
+    route = f"/vease_back/healthcheck"
+    response = client.get(route)
+    assert response.status_code == 200
+    message = response.json["message"]
+    assert type(message) is str
+    assert message == "healthy"
