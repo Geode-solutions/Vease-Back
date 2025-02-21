@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
+## v1.2.0-rc.3 (2025-02-21)
+
+
 ## v1.2.0-rc.2 (2025-02-21)
+
+### Bug Fixes
+
+- **args**: Typo
+  ([`aa639e1`](https://github.com/Geode-solutions/Vease-Back/commit/aa639e1d598e3054a66f3daa05338c0f2bff8c71))
 
 
 ## v1.2.0-rc.1 (2025-02-18)
