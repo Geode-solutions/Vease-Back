@@ -68,8 +68,8 @@ def run_server():
     args = parser.parse_args()
     app.config.update(DATA_FOLDER_PATH=args.data_folder_path)
     app.config.update(DESKTOP_APP=args.desktop)
-    flask_cors.CORS(app, origins=args.allowed_origin)
-    print(f"Host: {args.host}, Port: {args.port}, Debug: {args.debug}, Data folder path: {args.data_folder_path}, Desktop mode: {args.desktop}, Origins: {args.allowed_origin}", flush=True)
+    flask_cors.CORS(app, origins=args.allowed_origins)
+    print(f"Host: {args.host}, Port: {args.port}, Debug: {args.debug}, Data folder path: {args.data_folder_path}, Desktop mode: {args.desktop}, Origins: {args.allowed_origins}", flush=True)
     app.run(debug=args.debug, host=args.host, port=args.port, ssl_context=SSL)
 
 
