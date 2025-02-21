@@ -12,6 +12,6 @@ RUN apt-get install -y curl
 
 RUN apt-get update && apt-get install -y wget
 
-CMD ["vease-back", "--data_folder_path", "/data"]
+CMD ["vease-back", "--data_folder_path", "/data", "--allowed_origin", "['https://next.vease.geode-solutions.com', 'https://vease.geode-solutions.com']"]
 
 EXPOSE 5000
