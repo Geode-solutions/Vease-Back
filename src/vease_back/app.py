@@ -64,7 +64,7 @@ def run_server():
     parser.add_argument('-d', '--debug', default=FLASK_DEBUG, help='Whether to run in debug mode', action='store_true')
     parser.add_argument('-dfp', '--data_folder_path', type=str, default=DEFAULT_DATA_FOLDER_PATH, help='Path to the folder where data is stored')
     parser.add_argument('-dktp', '--desktop', default=DESKTOP_APP, help='Whether the app is in desktop mode or not, if not, the server times out after ', action='store_true')
-    parser.add_argument('-origin', '--allowed_origin', default=ORIGINS, help='Origins that are allowed to connect to the server')
+    parser.add_argument('-origins', '--allowed_origins', default=ORIGINS, help='Origins that are allowed to connect to the server')
     args = parser.parse_args()
     app.config.update(DATA_FOLDER_PATH=args.data_folder_path)
     app.config.update(DESKTOP_APP=args.desktop)
