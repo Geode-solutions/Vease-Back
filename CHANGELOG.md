@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
+## v1.2.0-rc.2 (2025-02-21)
+
+
 ## v1.2.0-rc.1 (2025-02-18)
+
+### Bug Fixes
+
+- **origins**: In docker
+  ([`32f2dc5`](https://github.com/Geode-solutions/Vease-Back/commit/32f2dc52f287a337492617c343c0c798775f6285))
 
 ### Features
 
