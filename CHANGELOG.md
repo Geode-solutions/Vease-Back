@@ -1,6 +1,9 @@
 # CHANGELOG
 
 
+## v1.2.0-rc.4 (2025-02-26)
+
+
 ## v1.2.0-rc.3 (2025-02-21)
 
 
@@ -31,6 +34,9 @@
 
 - **docker_image**: Install repo as package
   ([`8a94d51`](https://github.com/Geode-solutions/Vease-Back/commit/8a94d51b9b324ac1ae53f52f495a61a0395764ca))
+
+- **grid_attributes**: Update ogw-back & ecosystem
+  ([`186dec1`](https://github.com/Geode-solutions/Vease-Back/commit/186dec1c7b46cd168784d1046e911967ffe9654d))
 
 
 ## v1.1.3 (2025-02-13)
