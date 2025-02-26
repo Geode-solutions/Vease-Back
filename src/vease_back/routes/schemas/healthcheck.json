@@ -1,0 +1,7 @@
+{
+    "$id": "/vease_back/healthcheck",
+    "route": "/healthcheck",
+    "methods": ["GET"],
+    "type": "object",
+    "additionalProperties": false
+  }

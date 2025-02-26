@@ -64,12 +64,12 @@ def run_server():
     parser.add_argument('-d', '--debug', default=FLASK_DEBUG, help='Whether to run in debug mode', action='store_true')
     parser.add_argument('-dfp', '--data_folder_path', type=str, default=DEFAULT_DATA_FOLDER_PATH, help='Path to the folder where data is stored')
     parser.add_argument('-dktp', '--desktop', default=DESKTOP_APP, help='Whether the app is in desktop mode or not, if not, the server times out after ', action='store_true')
-    parser.add_argument('-origin', '--allowed_origin', default=ORIGINS, help='Origins that are allowed to connect to the server')
+    parser.add_argument('-origins', '--allowed_origins', default=ORIGINS, help='Origins that are allowed to connect to the server')
     args = parser.parse_args()
     app.config.update(DATA_FOLDER_PATH=args.data_folder_path)
     app.config.update(DESKTOP_APP=args.desktop)
-    flask_cors.CORS(app, origins=args.allowed_origin)
-    print(f"Host: {args.host}, Port: {args.port}, Debug: {args.debug}, Data folder path: {args.data_folder_path}, Desktop mode: {args.desktop}, Origins: {args.allowed_origin}", flush=True)
+    flask_cors.CORS(app, origins=args.allowed_origins)
+    print(f"Host: {args.host}, Port: {args.port}, Debug: {args.debug}, Data folder path: {args.data_folder_path}, Desktop mode: {args.desktop}, Origins: {args.allowed_origins}", flush=True)
     app.run(debug=args.debug, host=args.host, port=args.port, ssl_context=SSL)
 
 
