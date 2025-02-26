@@ -1,6 +1,44 @@
 # CHANGELOG
 
 
+## v1.2.0-rc.4 (2025-02-26)
+
+
+## v1.2.0-rc.3 (2025-02-21)
+
+
+## v1.2.0-rc.2 (2025-02-21)
+
+### Bug Fixes
+
+- **args**: Typo
+  ([`aa639e1`](https://github.com/Geode-solutions/Vease-Back/commit/aa639e1d598e3054a66f3daa05338c0f2bff8c71))
+
+
+## v1.2.0-rc.1 (2025-02-18)
+
+### Bug Fixes
+
+- **origins**: In docker
+  ([`32f2dc5`](https://github.com/Geode-solutions/Vease-Back/commit/32f2dc52f287a337492617c343c0c798775f6285))
+
+### Features
+
+- **routes**: Healthcheck
+  ([`f26ca4b`](https://github.com/Geode-solutions/Vease-Back/commit/f26ca4b32e5cddfa30bdebb3fd64bdcc4de6d4b4))
+
+
+## v1.1.4-rc.1 (2025-02-17)
+
+### Bug Fixes
+
+- **docker_image**: Install repo as package
+  ([`8a94d51`](https://github.com/Geode-solutions/Vease-Back/commit/8a94d51b9b324ac1ae53f52f495a61a0395764ca))
+
+- **grid_attributes**: Update ogw-back & ecosystem
+  ([`186dec1`](https://github.com/Geode-solutions/Vease-Back/commit/186dec1c7b46cd168784d1046e911967ffe9654d))
+
+
 ## v1.1.3 (2025-02-13)
 
 
