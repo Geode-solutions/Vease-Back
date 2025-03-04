@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v1.3.0 (2025-02-28)
+
+
+## v1.3.0-rc.2 (2025-02-28)
+
+### Bug Fixes
+
+- **version**: Update version of ogwback
+  ([`adec105`](https://github.com/Geode-solutions/Vease-Back/commit/adec105621da212d6c68e8764eb40f1a904983d1))
+
+
 ## v1.3.0-rc.1 (2025-02-28)
 
 
