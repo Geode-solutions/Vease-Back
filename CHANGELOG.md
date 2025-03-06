@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.4.0-rc.1 (2025-03-06)
+
+### Features
+
+- **deps**: Stable
+  ([`77df44e`](https://github.com/Geode-solutions/Vease-Back/commit/77df44e06a1576aa4b6113a1649f8129710aef77))
+
+
 ## v1.3.1 (2025-03-04)
 
 
@@ -27,6 +35,9 @@
 ## v1.2.0 (2025-02-26)
 
 ### Features
+
+- **deps**: Stable
+  ([`96a387b`](https://github.com/Geode-solutions/Vease-Back/commit/96a387b2e617b24619901253e5c5042db9053d81))
 
 - **deps**: Update rc
   ([`d0e5a04`](https://github.com/Geode-solutions/Vease-Back/commit/d0e5a04396b56ad0b81aee1abeb86d9f7d510f05))
