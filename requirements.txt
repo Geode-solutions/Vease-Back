@@ -23,6 +23,7 @@ click==8.1.8
     #   opengeodeweb-back
 flask[async]==3.1.0
     # via
+    #   flask
     #   flask-cors
     #   opengeodeweb-back
 flask-cors==5.0.1
@@ -33,7 +34,7 @@ geode-background==9.0.2
     #   geode-implicit
     #   geode-simplex
     #   opengeodeweb-back
-geode-common==33.5.2
+geode-common==33.5.0
     # via
     #   geode-background
     #   geode-conversion
@@ -60,7 +61,7 @@ geode-numerics==5.3.0
     #   geode-implicit
     #   geode-simplex
     #   opengeodeweb-back
-geode-simplex==9.1.0
+geode-simplex==9.0.11
     # via
     #   geode-implicit
     #   opengeodeweb-back
@@ -85,7 +86,7 @@ markupsafe==3.0.2
     #   jinja2
     #   opengeodeweb-back
     #   werkzeug
-opengeode-core==15.13.0
+opengeode-core==15.12.0
     # via
     #   geode-background
     #   geode-common
@@ -122,7 +123,7 @@ opengeode-io==7.1.0
     #   geode-viewables
     #   opengeode-geosciencesio
     #   opengeodeweb-back
-opengeodeweb-back==5.6.2
+opengeodeweb-back==5.6.1
     # via -r requirements.in
 referencing==0.36.2
     # via
