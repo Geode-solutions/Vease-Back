@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.4.1-rc.1 (2025-03-10)
+
+### Bug Fixes
+
+- **npm deps**: Update schemas versions
+  ([`3834170`](https://github.com/Geode-solutions/Vease-Back/commit/383417064eb49988a66a8a8441c861e4de781baa))
+
+
 ## v1.4.0 (2025-03-06)
 
 
