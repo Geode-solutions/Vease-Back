@@ -21,19 +21,21 @@ click==8.1.8
     # via
     #   flask
     #   opengeodeweb-back
+colorama==0.4.6
+    # via opengeodeweb-back
 flask[async]==3.1.0
     # via
     #   flask-cors
     #   opengeodeweb-back
 flask-cors==5.0.1
     # via opengeodeweb-back
-geode-background==9.0.7
+geode-background==9.1.1
     # via
     #   geode-explicit
     #   geode-implicit
     #   geode-simplex
     #   opengeodeweb-back
-geode-common==33.6.0
+geode-common==33.6.2
     # via
     #   geode-background
     #   geode-conversion
@@ -43,28 +45,28 @@ geode-common==33.6.0
     #   geode-simplex
     #   geode-viewables
     #   opengeodeweb-back
-geode-conversion==6.2.0
+geode-conversion==6.2.3
     # via
     #   geode-explicit
     #   geode-implicit
     #   geode-simplex
     #   opengeodeweb-back
-geode-explicit==6.1.31
+geode-explicit==6.1.33
     # via
     #   geode-implicit
     #   opengeodeweb-back
-geode-implicit==3.6.3
+geode-implicit==3.7.1
     # via opengeodeweb-back
-geode-numerics==5.4.2
+geode-numerics==6.0.1
     # via
     #   geode-implicit
     #   geode-simplex
     #   opengeodeweb-back
-geode-simplex==9.2.0
+geode-simplex==9.2.1
     # via
     #   geode-implicit
     #   opengeodeweb-back
-geode-viewables==3.0.10
+geode-viewables==3.0.11
     # via opengeodeweb-back
 itsdangerous==2.2.0
     # via
@@ -85,7 +87,7 @@ markupsafe==3.0.2
     #   jinja2
     #   opengeodeweb-back
     #   werkzeug
-opengeode-core==15.16.2
+opengeode-core==15.17.4
     # via
     #   geode-background
     #   geode-common
@@ -100,7 +102,7 @@ opengeode-core==15.16.2
     #   opengeode-inspector
     #   opengeode-io
     #   opengeodeweb-back
-opengeode-geosciences==8.4.0
+opengeode-geosciences==8.4.2
     # via
     #   geode-implicit
     #   geode-viewables
@@ -116,25 +118,25 @@ opengeode-inspector==6.3.10
     #   geode-implicit
     #   geode-simplex
     #   opengeodeweb-back
-opengeode-io==7.1.3
+opengeode-io==7.1.4
     # via
     #   geode-implicit
     #   geode-viewables
     #   opengeode-geosciencesio
     #   opengeodeweb-back
-opengeodeweb-back==5.6.3
+opengeodeweb-back==5.6.4
     # via -r requirements.in
 referencing==0.36.2
     # via
     #   jsonschema
     #   jsonschema-specifications
     #   opengeodeweb-back
-rpds-py==0.23.1
+rpds-py==0.24.0
     # via
     #   jsonschema
     #   opengeodeweb-back
     #   referencing
-typing-extensions==4.12.2
+typing-extensions==4.13.1
     # via
     #   asgiref
     #   opengeodeweb-back
