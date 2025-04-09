@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v1.4.3 (2025-04-07)
+
+
+## v1.4.3-rc.1 (2025-04-07)
+
+### Bug Fixes
+
+- **save_viewable**: Update deps
+  ([`4616fce`](https://github.com/Geode-solutions/Vease-Back/commit/4616fce6316526712577c6510ff3ae8b098a8a28))
+
+
 ## v1.4.2 (2025-03-19)
 
 
