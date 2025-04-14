@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.4.5-rc.1 (2025-04-14)
+
+### Bug Fixes
+
+- **timeout**: New timeout arg & update ecosystem
+  ([`fe5d885`](https://github.com/Geode-solutions/Vease-Back/commit/fe5d885fa58ce289126dd20aa06fc68439a4b0a3))
+
+
 ## v1.4.4 (2025-04-09)
 
 
