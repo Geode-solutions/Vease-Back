@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v1.4.6-rc.1 (2025-04-17)
+
+### Bug Fixes
+
+- **version**: Version RC ogwback
+  ([`bdbf0f4`](https://github.com/Geode-solutions/Vease-Back/commit/bdbf0f4e55b207fdc9b7b33c88f59d747724da35))
+
+- **version**: Version RC ogwback
+  ([`8ed1974`](https://github.com/Geode-solutions/Vease-Back/commit/8ed197403281f6230a2e8926cc2ecd02f5cf5269))
+
+
 ## v1.4.5 (2025-04-14)
 
 
