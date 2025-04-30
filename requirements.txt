@@ -27,13 +27,13 @@ flask[async]==3.1.0
     #   opengeodeweb-back
 flask-cors==5.0.1
     # via opengeodeweb-back
-geode-background==9.1.5
+geode-background==9.2.3
     # via
     #   geode-explicit
     #   geode-implicit
     #   geode-simplex
     #   opengeodeweb-back
-geode-common==33.7.2
+geode-common==33.7.6
     # via
     #   geode-background
     #   geode-conversion
@@ -43,28 +43,28 @@ geode-common==33.7.2
     #   geode-simplex
     #   geode-viewables
     #   opengeodeweb-back
-geode-conversion==6.2.7
+geode-conversion==6.2.11
     # via
     #   geode-explicit
     #   geode-implicit
     #   geode-simplex
     #   opengeodeweb-back
-geode-explicit==6.1.35
+geode-explicit==6.1.38
     # via
     #   geode-implicit
     #   opengeodeweb-back
-geode-implicit==3.7.4
+geode-implicit==3.7.8
     # via opengeodeweb-back
-geode-numerics==6.0.3
+geode-numerics==6.0.6
     # via
     #   geode-implicit
     #   geode-simplex
     #   opengeodeweb-back
-geode-simplex==9.2.5
+geode-simplex==9.2.8
     # via
     #   geode-implicit
     #   opengeodeweb-back
-geode-viewables==3.0.12
+geode-viewables==3.1.1
     # via opengeodeweb-back
 itsdangerous==2.2.0
     # via
@@ -76,7 +76,7 @@ jinja2==3.1.6
     #   opengeodeweb-back
 jsonschema==4.23.0
     # via opengeodeweb-back
-jsonschema-specifications==2024.10.1
+jsonschema-specifications==2025.4.1
     # via
     #   jsonschema
     #   opengeodeweb-back
@@ -85,7 +85,7 @@ markupsafe==3.0.2
     #   jinja2
     #   opengeodeweb-back
     #   werkzeug
-opengeode-core==15.17.8
+opengeode-core==15.17.14
     # via
     #   geode-background
     #   geode-common
@@ -100,29 +100,29 @@ opengeode-core==15.17.8
     #   opengeode-inspector
     #   opengeode-io
     #   opengeodeweb-back
-opengeode-geosciences==8.4.3
+opengeode-geosciences==8.4.6
     # via
     #   geode-implicit
     #   geode-viewables
     #   opengeode-geosciencesio
     #   opengeodeweb-back
-opengeode-geosciencesio==5.3.8
+opengeode-geosciencesio==5.3.9
     # via
     #   geode-implicit
     #   opengeodeweb-back
-opengeode-inspector==6.3.11
+opengeode-inspector==6.4.0
     # via
     #   geode-explicit
     #   geode-implicit
     #   geode-simplex
     #   opengeodeweb-back
-opengeode-io==7.1.5
+opengeode-io==7.2.0
     # via
     #   geode-implicit
     #   geode-viewables
     #   opengeode-geosciencesio
     #   opengeodeweb-back
-opengeodeweb-back==5.6.6
+opengeodeweb-back==5.7.0
     # via -r requirements.in
 referencing==0.36.2
     # via
