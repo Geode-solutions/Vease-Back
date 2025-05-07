@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
+## v1.4.7-rc.1 (2025-05-07)
+
+
 ## v1.4.6 (2025-04-30)
+
+### Bug Fixes
+
+- **deps**: Update ecosystem
+  ([`c0faa27`](https://github.com/Geode-solutions/Vease-Back/commit/c0faa27d34196bc2aa6cc77cfebd7b7139637480))
 
 
 ## v1.4.6-rc.2 (2025-04-30)
