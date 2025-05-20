@@ -1,12 +1,26 @@
 # CHANGELOG
 
 
+## v1.4.9-rc.2 (2025-05-20)
+
+### Bug Fixes
+
+- **docker_image**: Libgomp1 install
+  ([`c82d5db`](https://github.com/Geode-solutions/Vease-Back/commit/c82d5dbdc5118b8339e061fbaffd3e814faa9a6e))
+
+
+## v1.4.9-rc.1 (2025-05-20)
+
+
 ## v1.4.8 (2025-05-20)
 
 
 ## v1.4.8-rc.1 (2025-05-19)
 
 ### Bug Fixes
+
+- **New Version**: Fix version of ogw-back
+  ([`a04cb50`](https://github.com/Geode-solutions/Vease-Back/commit/a04cb50e2ac4781fd9551b0bf5d8fb5cea8bf18b))
 
 - **New Version**: Fix version of ogw-back
   ([`7aed2f6`](https://github.com/Geode-solutions/Vease-Back/commit/7aed2f6b8582faf1292770dadcb3c88fde4c0677))

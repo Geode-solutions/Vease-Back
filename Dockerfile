@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.12-slim
 
 WORKDIR /server
 
@@ -6,7 +6,7 @@ COPY . .
 RUN pip3 install --no-cache-dir -r requirements.txt && \
     pip3 install . && \
     apt-get update && \
-    apt-get install libgomp1 && \
+    apt-get install -y libgomp1 && \
     apt-get install -y curl && \
     apt-get update && apt-get install -y wget
 
