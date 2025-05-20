@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v1.4.8 (2025-05-20)
+
+
+## v1.4.8-rc.1 (2025-05-19)
+
+### Bug Fixes
+
+- **New Version**: Fix version of ogw-back
+  ([`7aed2f6`](https://github.com/Geode-solutions/Vease-Back/commit/7aed2f6b8582faf1292770dadcb3c88fde4c0677))
+
+
 ## v1.4.7 (2025-05-07)
 
 
