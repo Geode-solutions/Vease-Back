@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.4.9-rc.2 (2025-05-20)
+
+### Bug Fixes
+
+- **docker_image**: Libgomp1 install
+  ([`c82d5db`](https://github.com/Geode-solutions/Vease-Back/commit/c82d5dbdc5118b8339e061fbaffd3e814faa9a6e))
+
+
 ## v1.4.9-rc.1 (2025-05-20)
 
 
