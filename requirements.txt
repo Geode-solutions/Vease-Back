@@ -10,7 +10,6 @@ asgiref==3.8.1
     #   opengeodeweb-back
 attrs==25.3.0
     # via
-    #   jsonschema
     #   opengeodeweb-back
     #   referencing
 blinker==1.9.0
@@ -21,6 +20,8 @@ click==8.2.1
     # via
     #   flask
     #   opengeodeweb-back
+fastjsonschema==2.21.1
+    # via opengeodeweb-back
 flask[async]==3.1.1
     # via
     #   flask-cors
@@ -73,12 +74,6 @@ jinja2==3.1.6
     # via
     #   flask
     #   opengeodeweb-back
-jsonschema==4.24.0
-    # via opengeodeweb-back
-jsonschema-specifications==2025.4.1
-    # via
-    #   jsonschema
-    #   opengeodeweb-back
 markupsafe==3.0.2
     # via
     #   flask
@@ -122,16 +117,12 @@ opengeode-io==7.2.1
     #   geode-viewables
     #   opengeode-geosciencesio
     #   opengeodeweb-back
-opengeodeweb-back==5.8.3
+opengeodeweb-back==5.8.4
     # via -r requirements.in
 referencing==0.36.2
-    # via
-    #   jsonschema
-    #   jsonschema-specifications
-    #   opengeodeweb-back
+    # via opengeodeweb-back
 rpds-py==0.25.1
     # via
-    #   jsonschema
     #   opengeodeweb-back
     #   referencing
 typing-extensions==4.14.0
