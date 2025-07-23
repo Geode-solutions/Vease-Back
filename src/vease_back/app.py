@@ -63,7 +63,7 @@ def run_server():
     parser.add_argument('-p', '--port', type=int, default=DEFAULT_PORT, help='Port to listen on')
     parser.add_argument('-d', '--debug', default=FLASK_DEBUG, help='Whether to run in debug mode', action='store_true')
     parser.add_argument('-dfp', '--data_folder_path', type=str, default=DEFAULT_DATA_FOLDER_PATH, help='Path to the folder where data is stored')
-    parser.add_argument('-ufp', '--upload_folder_path', type=str, default="./uploads", help='Path to the folder where uploads are stored')
+    parser.add_argument('-ufp', '--upload_folder_path', type=str, default="./tmp/vease", help='Path to the folder where uploads are stored')
     parser.add_argument('-origins', '--allowed_origins', default=ORIGINS, help='Origins that are allowed to connect to the server')
     parser.add_argument('-t', '--timeout', default=TIMEOUT, help='Number of minutes before the server times out')
     args = parser.parse_args()
