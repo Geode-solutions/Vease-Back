@@ -34,13 +34,6 @@ def packages_versions():
         "OpenGeode-GeosciencesIO",
         "OpenGeode-Inspector",
         "OpenGeode-IO",
-        "Geode-Background",
-        "Geode-Common",
-        "Geode-Conversion",
-        "Geode-Explicit",
-        "Geode-Implicit",
-        "Geode-Numerics",
-        "Geode-Simplex",
         "Geode-Viewables",
     ]
     return flask.make_response(
