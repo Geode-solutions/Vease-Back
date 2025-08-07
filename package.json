@@ -8,7 +8,7 @@
     "build": "npm run json"
   },
   "dependencies": {
-    "@geode/opengeodeweb-back": "file:../OpenGeodeWeb-Back/geode-opengeodeweb-back-0.0.0.tgz"
+    "@geode/opengeodeweb-back": "latest"
   },
   "exports": {
     "./schemas.json": {
