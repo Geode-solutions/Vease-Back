@@ -66,7 +66,7 @@ opengeode-io==7.3.2
     #   geode-viewables
     #   opengeode-geosciencesio
     #   opengeodeweb-back
-opengeodeweb-back==5.*,>=5.10.0rc5
+opengeodeweb-back==5.*,>=5.10.0rc6
     # via -r requirements.in
 werkzeug==3.0.3
     # via
