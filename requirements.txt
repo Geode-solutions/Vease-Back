@@ -21,8 +21,11 @@ fastjsonschema==2.16.2
 flask[async]==3.0.3
     # via
     #   flask-cors
+    #   flask-sqlalchemy
     #   opengeodeweb-back
 flask-cors==6.0.1
+    # via opengeodeweb-back
+flask-sqlalchemy==3.1.1
     # via opengeodeweb-back
 geode-common==33.9.0
     # via
@@ -30,6 +33,10 @@ geode-common==33.9.0
     #   opengeodeweb-back
 geode-viewables==3.2.0
     # via opengeodeweb-back
+greenlet==3.2.4
+    # via
+    #   opengeodeweb-back
+    #   sqlalchemy
 itsdangerous==2.2.0
     # via
     #   flask
@@ -66,8 +73,16 @@ opengeode-io==7.3.2
     #   geode-viewables
     #   opengeode-geosciencesio
     #   opengeodeweb-back
-opengeodeweb-back==5.*,>=5.10.0rc6
+opengeodeweb-back==5.*,>=5.10.0rc11
     # via -r requirements.in
+sqlalchemy==2.0.43
+    # via
+    #   flask-sqlalchemy
+    #   opengeodeweb-back
+typing-extensions==4.15.0
+    # via
+    #   opengeodeweb-back
+    #   sqlalchemy
 werkzeug==3.0.3
     # via
     #   flask
