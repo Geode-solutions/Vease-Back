@@ -77,7 +77,7 @@ opengeode-io==7.3.2
     #   geode-viewables
     #   opengeode-geosciencesio
     #   opengeodeweb-back
-opengeodeweb-back==5.*,>=5.10.0rc12
+opengeodeweb-back==5.*,>=5.10.0rc13
     # via -r requirements.in
 opengeodeweb-microservice==1.0.0
     # via opengeodeweb-back
