@@ -64,7 +64,7 @@ def root():
 
 @app.route("/kill", methods=["POST"])
 @cross_origin()
-def kill():
+def kill() -> None:
     print("Manual server kill, shutting down...", flush=True)
     os._exit(0)
 
