@@ -2,14 +2,11 @@ import pytest
 import os
 from typing import Generator
 from src.vease_back.app import app
-from opengeodeweb_microservice.database.connection import (
-    init_database as init_db_connection,
-    get_session,
-)
+from opengeodeweb_microservice.database.connection import init_database, get_session
 from opengeodeweb_microservice.database.data import Data
 
 
-DB_PATH: str = os.path.join(os.path.dirname(__file__), "test_project.db")
+DB_PATH = os.path.join(os.path.dirname(__file__), "test_project.db")
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -38,7 +35,7 @@ def clean_database() -> Generator[None, None, None]:
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_database() -> Generator[None, None, None]:
-    init_db_connection(DB_PATH)
+    init_database(DB_PATH)
     yield
     _cleanup_database(DB_PATH)
 
