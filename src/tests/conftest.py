@@ -1,5 +1,6 @@
 import pytest
 import os
+from typing import Generator
 from src.vease_back.app import app
 from opengeodeweb_microservice.database.connection import init_database, get_session
 from opengeodeweb_microservice.database.data import Data
@@ -19,28 +20,31 @@ def client():
 
 
 @pytest.fixture(autouse=True)
-def clean_database():
+def clean_database() -> Generator[None, None, None]:
     session = get_session()
-    session.query(Data).delete()
-    session.commit()
+    if session is not None:
+        session.query(Data).delete()
+        session.commit()
     yield
     try:
-        session.rollback()
+        if session is not None:
+            session.rollback()
     except Exception:
         pass
 
 
 @pytest.fixture(scope="session", autouse=True)
-def setup_database():
-    init_database(DB_PATH)
+def setup_database() -> Generator[None, None, None]:
+    init_database(app)
     yield
     _cleanup_database(DB_PATH)
 
 
-def _cleanup_database(db_path: str):
+def _cleanup_database(db_path: str) -> None:
     try:
         session = get_session()
-        session.close()
+        if session is not None:
+            session.close()
     except Exception:
         pass
 

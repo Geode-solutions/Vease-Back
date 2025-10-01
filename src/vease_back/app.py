@@ -35,9 +35,9 @@ SSL = app.config.get("SSL")
 SECONDS_BETWEEN_SHUTDOWNS = float(app.config.get("SECONDS_BETWEEN_SHUTDOWNS"))
 
 
-def get_db_path_from_config():
+def get_db_path_from_config() -> str:
     database_uri = f"{os.path.abspath(
-        os.path.join(app.config.get("DATA_FOLDER_PATH"), app.config.get("DATABASE_FILENAME"))
+        os.path.join(str(app.config.get("DATA_FOLDER_PATH")), str(app.config.get("DATABASE_FILENAME")))
         )}"
     return database_uri
 
