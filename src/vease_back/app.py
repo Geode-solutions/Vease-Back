@@ -8,8 +8,7 @@ import flask_cors
 from flask_cors import cross_origin
 from opengeodeweb_back import utils_functions, app_config
 from opengeodeweb_back.routes import blueprint_routes
-from opengeodeweb_microservice.database.connection import init_database
-from werkzeug.exceptions import HTTPException
+from opengeodeweb_microservice.database.connection import init_database as init_db_func
 from werkzeug.exceptions import HTTPException
 
 # Local libraries
@@ -136,8 +135,7 @@ def run_server():
         db_dir = os.path.dirname(db_path)
         if db_dir and not os.path.exists(db_dir):
             os.makedirs(db_dir, exist_ok=True)
-        # Cast explicite pour forcer le type
-        init_database(str(db_path))
+        init_db_func(str(db_path))
         print(f"Database initialized at: {db_path}")
     app.run(debug=args.debug, host=args.host, port=args.port, ssl_context=SSL)
 
