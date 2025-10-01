@@ -36,9 +36,11 @@ SECONDS_BETWEEN_SHUTDOWNS = float(app.config.get("SECONDS_BETWEEN_SHUTDOWNS"))
 
 
 def get_db_path_from_config() -> str:
-    database_uri: str = f"{os.path.abspath(
+    database_uri: str = (
+        f"{os.path.abspath(
         os.path.join(str(app.config.get("DATA_FOLDER_PATH")), str(app.config.get("DATABASE_FILENAME")))
         )}"
+    )
     return database_uri
 
 
