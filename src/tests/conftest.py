@@ -2,7 +2,7 @@ import pytest
 import os
 from typing import Generator
 from src.vease_back.app import app
-from opengeodeweb_microservice.database.connection import init_database, get_session
+from opengeodeweb_microservice.database.connection import init_database as init_db_connection, get_session
 from opengeodeweb_microservice.database.data import Data
 
 
@@ -35,10 +35,9 @@ def clean_database() -> Generator[None, None, None]:
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_database() -> Generator[None, None, None]:
-    # Explicitly cast to str to help mypy understand the type
-    init_database(str(DB_PATH))
+    init_db_connection(DB_PATH)
     yield
-    _cleanup_database(str(DB_PATH))
+    _cleanup_database(DB_PATH)
 
 
 def _cleanup_database(db_path: str) -> None:
