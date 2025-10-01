@@ -79,6 +79,10 @@ def kill() -> None:
     os._exit(0)
 
 
+def init_database_str(db_path: str) -> None:
+    db_conn.init_database(db_path)
+
+
 def run_server():
     parser = argparse.ArgumentParser(
         prog="Vease-Back", description="Backend server for Vease"
@@ -134,7 +138,7 @@ def run_server():
         db_dir = os.path.dirname(db_path)
         if db_dir and not os.path.exists(db_dir):
             os.makedirs(db_dir, exist_ok=True)
-        db_conn.init_database(db_path)
+        init_database_str(db_path)
         print(f"Database initialized at: {db_path}")
     app.run(debug=args.debug, host=args.host, port=args.port, ssl_context=SSL)
 
