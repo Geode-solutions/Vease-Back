@@ -2,7 +2,10 @@ import pytest
 import os
 from typing import Generator
 from src.vease_back.app import app
-from opengeodeweb_microservice.database.connection import init_database as init_db_connection, get_session
+from opengeodeweb_microservice.database.connection import (
+    init_database as init_db_connection,
+    get_session,
+)
 from opengeodeweb_microservice.database.data import Data
 
 
