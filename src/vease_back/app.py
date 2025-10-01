@@ -36,7 +36,7 @@ SECONDS_BETWEEN_SHUTDOWNS = float(app.config.get("SECONDS_BETWEEN_SHUTDOWNS"))
 
 
 def get_db_path_from_config() -> str:
-    database_uri = f"{os.path.abspath(
+    database_uri: str = f"{os.path.abspath(
         os.path.join(str(app.config.get("DATA_FOLDER_PATH")), str(app.config.get("DATABASE_FILENAME")))
         )}"
     return database_uri
@@ -128,12 +128,13 @@ def run_server():
         f"Host: {args.host}, Port: {args.port}, Debug: {args.debug}, Data folder path: {args.data_folder_path}, Timeout: {args.timeout}, Origins: {args.allowed_origins}",
         flush=True,
     )
-    db_path = get_db_path_from_config()
+    db_path: str = get_db_path_from_config()
     print("db_path", db_path, flush=True)
     if db_path:
         db_dir = os.path.dirname(db_path)
         if db_dir and not os.path.exists(db_dir):
             os.makedirs(db_dir, exist_ok=True)
+        # Cast explicite pour forcer le type
         init_database(str(db_path))
         print(f"Database initialized at: {db_path}")
     app.run(debug=args.debug, host=args.host, port=args.port, ssl_context=SSL)
