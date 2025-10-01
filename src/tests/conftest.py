@@ -35,9 +35,9 @@ def clean_database() -> Generator[None, None, None]:
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_database() -> Generator[None, None, None]:
-    init_database(str(DB_PATH))
+    init_database(app)
     yield
-    _cleanup_database(str(DB_PATH))
+    _cleanup_database(DB_PATH)
 
 
 def _cleanup_database(db_path: str) -> None:
