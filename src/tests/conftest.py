@@ -6,7 +6,7 @@ from opengeodeweb_microservice.database.connection import init_database, get_ses
 from opengeodeweb_microservice.database.data import Data
 
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "test_project.db")
+DB_PATH: str = os.path.join(os.path.dirname(__file__), "test_project.db")
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -35,9 +35,10 @@ def clean_database() -> Generator[None, None, None]:
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_database() -> Generator[None, None, None]:
-    init_database(DB_PATH)
+    # Explicitly cast to str to help mypy understand the type
+    init_database(str(DB_PATH))
     yield
-    _cleanup_database(DB_PATH)
+    _cleanup_database(str(DB_PATH))
 
 
 def _cleanup_database(db_path: str) -> None:
