@@ -8,7 +8,8 @@ import flask_cors
 from flask_cors import cross_origin
 from opengeodeweb_back import utils_functions, app_config
 from opengeodeweb_back.routes import blueprint_routes
-import opengeodeweb_microservice.database.connection as db_conn
+from opengeodeweb_microservice.database.connection import init_database
+from werkzeug.exceptions import HTTPException
 from werkzeug.exceptions import HTTPException
 
 # Local libraries
@@ -35,11 +36,9 @@ SECONDS_BETWEEN_SHUTDOWNS = float(app.config.get("SECONDS_BETWEEN_SHUTDOWNS"))
 
 
 def get_db_path_from_config() -> str:
-    database_uri: str = (
-        f"{os.path.abspath(
+    database_uri = f"{os.path.abspath(
         os.path.join(str(app.config.get("DATA_FOLDER_PATH")), str(app.config.get("DATABASE_FILENAME")))
         )}"
-    )
     return database_uri
 
 
@@ -77,10 +76,6 @@ def root():
 def kill() -> None:
     print("Manual server kill, shutting down...", flush=True)
     os._exit(0)
-
-
-def init_database_str(db_path: str) -> None:
-    db_conn.init_database(db_path)
 
 
 def run_server():
@@ -133,12 +128,13 @@ def run_server():
         f"Host: {args.host}, Port: {args.port}, Debug: {args.debug}, Data folder path: {args.data_folder_path}, Timeout: {args.timeout}, Origins: {args.allowed_origins}",
         flush=True,
     )
-    db_path: str = get_db_path_from_config()
+    db_path = get_db_path_from_config()
+    print("db_path", db_path, flush=True)
     if db_path:
         db_dir = os.path.dirname(db_path)
         if db_dir and not os.path.exists(db_dir):
             os.makedirs(db_dir, exist_ok=True)
-        init_database_str(db_path)
+        init_database(str(db_path))
         print(f"Database initialized at: {db_path}")
     app.run(debug=args.debug, host=args.host, port=args.port, ssl_context=SSL)
 
