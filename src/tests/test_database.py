@@ -18,7 +18,6 @@ def test_data_crud_operations(clean_database: Any) -> None:
     assert retrieved.id == data.id
     non_existent = Data.get("fake_id")
     assert non_existent is None
-    assert False
 
 
 def test_data_with_additional_files(clean_database: Any) -> None:
