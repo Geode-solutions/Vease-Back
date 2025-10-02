@@ -4,57 +4,64 @@
 #
 #    pip-compile --output-file=./requirements.txt --pre ./requirements-internal.in ./requirements.in
 #
-asgiref==3.*,>=3.9.2
+asgiref==3.*
     # via
     #   flask
     #   opengeodeweb-back
-blinker==1.*,>=1.9.0
+blinker==1.*
     # via
     #   flask
     #   opengeodeweb-back
-click==8.*,>=8.3.0
+    #   opengeodeweb-microservice
+click==8.*
     # via
     #   flask
     #   opengeodeweb-back
-fastjsonschema==2.*,>=2.21.1
+    #   opengeodeweb-microservice
+fastjsonschema==2.*
     # via
     #   opengeodeweb-back
     #   opengeodeweb-microservice
-flask[async]==3.*,>=3.0.3
+flask[async]==3.*
     # via
     #   flask-cors
     #   flask-sqlalchemy
     #   opengeodeweb-back
-flask-cors==6.*,>=6.0.1
+    #   opengeodeweb-microservice
+flask-cors==6.*
     # via opengeodeweb-back
-flask-sqlalchemy==3.*,>=3.1.1
+flask-sqlalchemy==3.*
     # via
     #   opengeodeweb-back
     #   opengeodeweb-microservice
-geode-common==33.*,>=33.11.0
+geode-common==33.*
     # via
     #   geode-viewables
     #   opengeodeweb-back
-geode-viewables==3.*,>=3.3.0
+geode-viewables==3.*
     # via opengeodeweb-back
-greenlet==3.*,>=3.2.4
+greenlet==3.*
     # via
     #   opengeodeweb-back
+    #   opengeodeweb-microservice
     #   sqlalchemy
-itsdangerous==2.*,>=2.2.0
+itsdangerous==2.*
     # via
     #   flask
     #   opengeodeweb-back
-jinja2==3.*,>=3.1.6
+    #   opengeodeweb-microservice
+jinja2==3.*
     # via
     #   flask
     #   opengeodeweb-back
-markupsafe==3.*,>=3.0.3
+    #   opengeodeweb-microservice
+markupsafe==3.*
     # via
     #   jinja2
     #   opengeodeweb-back
+    #   opengeodeweb-microservice
     #   werkzeug
-opengeode-core==15.*,>=15.27.4
+opengeode-core==15.*
     # via
     #   geode-common
     #   geode-viewables
@@ -63,35 +70,37 @@ opengeode-core==15.*,>=15.27.4
     #   opengeode-inspector
     #   opengeode-io
     #   opengeodeweb-back
-opengeode-geosciences==9.*,>=9.4.1
+opengeode-geosciences==9.*
     # via
     #   geode-viewables
     #   opengeode-geosciencesio
     #   opengeodeweb-back
-opengeode-geosciencesio==5.*,>=5.8.0
+opengeode-geosciencesio==5.*
     # via opengeodeweb-back
-opengeode-inspector==6.*,>=6.8.1
+opengeode-inspector==6.*
     # via opengeodeweb-back
-opengeode-io==7.*,>=7.4.0
+opengeode-io==7.*
     # via
     #   geode-viewables
     #   opengeode-geosciencesio
     #   opengeodeweb-back
-opengeodeweb-back==5.10.0rc18
+opengeodeweb-back==5.10.0rc19
     # via -r requirements-internal.in
-opengeodeweb-microservice==1.*,>=1.0.0
+opengeodeweb-microservice==1.0.1rc2
     # via opengeodeweb-back
-sqlalchemy==2.*,>=2.0.43
+sqlalchemy==2.*
     # via
     #   flask-sqlalchemy
     #   opengeodeweb-back
     #   opengeodeweb-microservice
-typing-extensions==4.*,>=4.15.0
+typing-extensions==4.*
     # via
     #   opengeodeweb-back
+    #   opengeodeweb-microservice
     #   sqlalchemy
-werkzeug==3.*,>=3.0.3
+werkzeug==3.*
     # via
     #   flask
     #   flask-cors
     #   opengeodeweb-back
+    #   opengeodeweb-microservice
