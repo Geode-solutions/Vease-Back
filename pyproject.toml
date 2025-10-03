@@ -2,17 +2,16 @@
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
-
 [project]
 name = "vease_back"
-version = "1.4.15"
+version = "0.0.0"
 dynamic = ["dependencies"]
 authors = [
   { name="Geode-solutions", email="team-web@geode-solutions.com" },
 ]
 description = ""
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -34,18 +33,3 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 "vease_back.routes.schemas" = ["*.json"]
-
-[tool.semantic_release]
-version_toml = [
-    "pyproject.toml:project.version",
-]
-
-[tool.semantic_release.remote.token]
-env = "GH_TOKEN"
-
-[tool.semantic_release.branches.master]
-match = "master"
-
-[tool.semantic_release.branches.next]
-match = "next"
-prerelease = true
