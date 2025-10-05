@@ -1,7 +1,7 @@
 # Standard library imports
 
 # Third party imports
-from opengeodeweb_back import app, run_server
+from opengeodeweb_back.app import app, run_server
 
 # Local application imports
 import vease_back.routes.blueprint_vease as blueprint_vease
