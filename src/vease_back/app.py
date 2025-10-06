@@ -14,7 +14,7 @@ app.register_blueprint(
 )
 
 
-def run_vease_back():
+def run_vease_back() -> None:
     run_server()
 
 
