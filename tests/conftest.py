@@ -33,13 +33,14 @@ def configure_test_environment() -> Generator[None, None, None]:
     app.config["UPLOAD_FOLDER"] = "./tests/data/"
 
     # Setup database
-    db_path = os.path.join(base_path, "data", "project.db")
+    db_filename = "project.db"
+    db_dir = os.path.join(base_path, "data")
+    db_path = os.path.join(db_dir, db_filename)
+    os.makedirs(db_dir, exist_ok=True)
+
     app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{db_path}"
 
-    print("Current working directory:", os.getcwd())
-    print("Directory contents:", os.listdir("."))
-
-    init_database(app, db_path)
+    init_database(app, db_filename)
     os.environ["TEST_DB_PATH"] = str(db_path)
 
     yield
@@ -62,16 +63,19 @@ def client():
 
 @pytest.fixture(autouse=True)
 def clean_database():
-    session = get_session()
-    if session:
-        session.query(Data).delete()
-        session.commit()
-    yield
-    try:
+    with app.app_context():
+        session = get_session()
         if session:
-            session.rollback()
-    except Exception:
-        pass
+            session.query(Data).delete()
+            session.commit()
+    yield
+    with app.app_context():
+        try:
+            session = get_session()
+            if session:
+                session.rollback()
+        except Exception:
+            pass
 
 
 @pytest.fixture

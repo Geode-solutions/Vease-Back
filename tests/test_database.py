@@ -1,7 +1,7 @@
 from opengeodeweb_microservice.database.data import Data
 
 
-def test_data_crud_operations(clean_database):
+def test_data_crud_operations(clean_database, app_context):
     data = Data.create(
         geode_object="test_object", input_file="test.txt", additional_files=[]
     )
@@ -17,10 +17,9 @@ def test_data_crud_operations(clean_database):
     assert retrieved.id == data.id
     non_existent = Data.get("fake_id")
     assert non_existent is None
-    assert False
 
 
-def test_data_with_additional_files(clean_database):
+def test_data_with_additional_files(clean_database, app_context):
     files = ["file1.txt", "file2.txt"]
     data = Data.create(geode_object="test_files", additional_files=files)
     assert data.id is not None

@@ -142,3 +142,4 @@ lock
 time
 build
 .mypy_cache
+*.db
