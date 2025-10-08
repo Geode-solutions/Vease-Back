@@ -1,4 +1,3 @@
-from typing import Any
 from opengeodeweb_microservice.database.data import Data
 
 
