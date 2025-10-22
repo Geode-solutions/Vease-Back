@@ -1,0 +1,31 @@
+{
+  "vease_back": {
+    "packages_versions": {
+      "$id": "vease_back/packages_versions",
+      "route": "/packages_versions",
+      "methods": [
+        "GET"
+      ],
+      "type": "object",
+      "additionalProperties": false
+    },
+    "microservice_version": {
+      "$id": "vease_back/microservice_version",
+      "route": "/microservice_version",
+      "methods": [
+        "GET"
+      ],
+      "type": "object",
+      "additionalProperties": false
+    },
+    "healthcheck": {
+      "$id": "vease_back/healthcheck",
+      "route": "/healthcheck",
+      "methods": [
+        "GET"
+      ],
+      "type": "object",
+      "additionalProperties": false
+    }
+  }
+}

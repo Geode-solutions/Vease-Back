@@ -5,29 +5,21 @@ import os
 import flask
 import flask_cors
 import json
+from opengeodeweb_microservice.schemas import get_schemas_dict
 from opengeodeweb_back import utils_functions
 
-schemas = os.path.join(os.path.dirname(__file__), "schemas")
-
-with open(os.path.join(schemas, "packages_versions.json"), "r") as file:
-    packages_versions_json = json.load(file)
-
-with open(os.path.join(schemas, "microservice_version.json"), "r") as file:
-    microservice_version_json = json.load(file)
-
-with open(os.path.join(schemas, "healthcheck.json"), "r") as file:
-    healthcheck_json = json.load(file)
-
+schemas_dict = get_schemas_dict(os.path.join(os.path.dirname(__file__), "schemas"))
 
 routes = flask.Blueprint("vease_routes", __name__)
 flask_cors.CORS(routes)
 
 
 @routes.route(
-    packages_versions_json["route"], methods=packages_versions_json["methods"]
+    schemas_dict["packages_versions"]["route"],
+    methods=schemas_dict["packages_versions"]["methods"],
 )
-def packages_versions():
-    utils_functions.validate_request(flask.request, packages_versions_json)
+def packages_versions() -> flask.Response:
+    utils_functions.validate_request(flask.request, schemas_dict["packages_versions"])
     list_packages = [
         "OpenGeode-core",
         "OpenGeode-Geosciences",
@@ -42,10 +34,13 @@ def packages_versions():
 
 
 @routes.route(
-    microservice_version_json["route"], methods=microservice_version_json["methods"]
+    schemas_dict["microservice_version"]["route"],
+    methods=schemas_dict["microservice_version"]["methods"],
 )
-def microservice_version():
-    utils_functions.validate_request(flask.request, microservice_version_json)
+def microservice_version() -> flask.Response:
+    utils_functions.validate_request(
+        flask.request, schemas_dict["microservice_version"]
+    )
     list_packages = ["vease-back"]
     return flask.make_response(
         {"microservice_version": utils_functions.versions(list_packages)[0]["version"]},
@@ -53,6 +48,8 @@ def microservice_version():
     )
 
 
-@routes.route(healthcheck_json["route"], methods=healthcheck_json["methods"])
-def healthcheck():
+@routes.route(
+    schemas_dict["healthcheck"]["route"], methods=schemas_dict["healthcheck"]["methods"]
+)
+def healthcheck() -> flask.Response:
     return flask.make_response({"message": "healthy"}, 200)
