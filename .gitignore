@@ -143,3 +143,4 @@ time
 build
 .mypy_cache
 *.db
+package-lock.json
