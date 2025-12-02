@@ -1,6 +1,6 @@
 def test_allowed_files(client):
     route = f"/opengeodeweb_back/allowed_files"
-    response = client.post(route, json={})
+    response = client.post(route)
     assert response.status_code == 200
 
 
