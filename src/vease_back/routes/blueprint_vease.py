@@ -3,7 +3,7 @@ import os
 
 # Third party imports
 import flask
-import flask_cors
+import flask_cors  # type: ignore
 import json
 from opengeodeweb_microservice.schemas import get_schemas_dict
 from opengeodeweb_back import utils_functions
