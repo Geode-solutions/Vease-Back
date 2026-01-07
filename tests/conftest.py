@@ -10,12 +10,13 @@ import pytest
 from flask.testing import FlaskClient
 
 # Local application imports
-from vease_back.app import app
+from vease_back.app import run_vease_back
 from opengeodeweb_microservice.database.connection import init_database, get_session
 from opengeodeweb_microservice.database.data import Data
 
 TEST_ID = "1"
 
+app = run_vease_back()
 
 @pytest.fixture(scope="session", autouse=True)
 def configure_test_environment() -> Generator[None, None, None]:
