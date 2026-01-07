@@ -18,6 +18,7 @@ TEST_ID = "1"
 
 app = run_vease_back()
 
+
 @pytest.fixture(scope="session", autouse=True)
 def configure_test_environment() -> Generator[None, None, None]:
     base_path = Path(__file__).parent
