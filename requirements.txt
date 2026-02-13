@@ -5,4 +5,3 @@
 #    pip-compile --output-file=./requirements.txt ./requirements.in
 #
 
-opengeodeweb-back==6.*,>=6.1.2rc1
