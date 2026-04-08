@@ -27,6 +27,5 @@ ENV PYTHON_ENV=prod
 
 ENTRYPOINT ["/usr/local/bin/vease-back"]
 CMD ["--data_folder_path", "/data", \
-    "--allowed_origins", "https://next.vease.geode-solutions.com", "https://vease.geode-solutions.com", \
     "--timeout", "5"]
 
