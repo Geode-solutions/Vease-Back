@@ -22,6 +22,8 @@ FROM debian:12-slim
 COPY --from=builder /app/dist/vease-back /usr/local/bin/vease-back
 RUN chmod +x /usr/local/bin/vease-back
 
+RUN apt-get update && apt-get install -y libgomp1
+
 EXPOSE 5000
 ENV PYTHON_ENV=prod
 
