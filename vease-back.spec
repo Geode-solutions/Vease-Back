@@ -7,12 +7,15 @@ datas = []
 datas += collect_data_files('opengeodeweb_back')
 datas += collect_data_files('vease_back')
 datas += copy_metadata('vease_back', recursive=True)
+binaries = []
 
+if sys.platform.startswith('linux'):
+    binaries.append(('/usr/lib/x86_64-linux-gnu/libgomp.so*', '.'))
 
 a = Analysis(
     ['src/vease_back/app.py'],
     pathex=[],
-    binaries=[],
+    binaries=binaries,
     datas=datas,
     hiddenimports=[],
     hookspath=[],
