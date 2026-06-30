@@ -33,7 +33,7 @@ def configure_test_environment() -> Generator[None, None, None]:
     app.config["TESTING"] = True
     app.config["SERVER_NAME"] = "TEST"
     app.config["DATA_FOLDER_PATH"] = data_folder
-    app.config["UPLOAD_FOLDER"] = "./tests/data/"
+    app.config["UPLOAD_FOLDER_PATH"] = "./tests/data/"
 
     db_path = os.path.join(data_folder, "project.db")
     os.makedirs(os.path.dirname(db_path), exist_ok=True)
