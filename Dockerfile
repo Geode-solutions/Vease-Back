@@ -28,6 +28,7 @@ EXPOSE 5000
 ENV PYTHON_ENV=prod
 
 ENTRYPOINT ["/usr/local/bin/vease-back"]
-CMD ["--data_folder_path", "/data", \
+CMD ["--project_folder_path", "/project", \
+    "--allowed_origins", "https://next.vease.geode-solutions.com", "https://vease.geode-solutions.com", \
     "--timeout", "5"]
 
