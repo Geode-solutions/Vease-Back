@@ -29,5 +29,5 @@ ENV PYTHON_ENV=prod
 
 ENTRYPOINT ["/usr/local/bin/vease-back"]
 CMD ["--project_folder_path", "/project", \
-    "--timeout", "5"]
+    "--timeout", "2"]
 
