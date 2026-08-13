@@ -2,38 +2,38 @@
   "name": "@geode/vease-back",
   "version": "0.0.0",
   "description": "",
-  "scripts": {
-    "json": "node ./node_modules/@geode/opengeodeweb-microservice/generate_schemas.js vease_back routes route /",
-    "test": "npm run json",
-    "build": "npm run json"
+  "homepage": "https://github.com/Geode-solutions/Vease-Back",
+  "bugs": {
+    "url": "https://github.com/Geode-solutions/Vease-Back/issues"
   },
-  "dependencies": {
-    "@geode/opengeodeweb-microservice": "0.0.0"
+  "license": "MIT",
+  "author": {
+    "name": "Geode-solutions",
+    "email": "contact@geode-solutions.com",
+    "url": "https://geode-solutions.com/"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geode-solutions/Vease-Back.git"
+  },
+  "files": [
+    "vease_back_schemas.json"
+  ],
   "exports": {
     "./vease_back_schemas.json": {
       "import": "./vease_back_schemas.json",
       "require": "./vease_back_schemas.json"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Geode-solutions/Vease-Back.git"
-  },
-  "author": {
-    "name": "Geode-solutions",
-    "email": "contact@geode-solutions.com",
-    "url": "https://geode-solutions.com/"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Geode-solutions/Vease-Back/issues"
-  },
-  "homepage": "https://github.com/Geode-solutions/Vease-Back",
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "vease_back_schemas.json"
-  ]
+  "scripts": {
+    "json": "npx opengeodeweb-microservice-generate --startDir src/vease_back/routes --key route --separator /",
+    "test": "npm run json",
+    "build": "npm run json"
+  },
+  "dependencies": {
+    "@geode/opengeodeweb-microservice": "0.0.0"
+  }
 }
