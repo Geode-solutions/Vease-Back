@@ -7,7 +7,35 @@
         "GET"
       ],
       "type": "object",
-      "additionalProperties": false
+      "additionalProperties": false,
+      "response": {
+        "type": "object",
+        "properties": {
+          "packages_versions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "package": {
+                  "type": "string"
+                },
+                "version": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "package",
+                "version"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "packages_versions"
+        ],
+        "additionalProperties": false
+      }
     },
     "microservice_version": {
       "$id": "vease_back/microservice_version",
@@ -16,7 +44,19 @@
         "GET"
       ],
       "type": "object",
-      "additionalProperties": false
+      "additionalProperties": false,
+      "response": {
+        "type": "object",
+        "properties": {
+          "microservice_version": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "microservice_version"
+        ],
+        "additionalProperties": false
+      }
     },
     "healthcheck": {
       "$id": "vease_back/healthcheck",
@@ -25,7 +65,19 @@
         "GET"
       ],
       "type": "object",
-      "additionalProperties": false
+      "additionalProperties": false,
+      "response": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "message"
+        ],
+        "additionalProperties": false
+      }
     }
   }
 }
