@@ -1,25 +1,22 @@
 # Standard library imports
-import os
 
 # Third party imports
 import flask
 import flask_cors  # type: ignore
-import json
-from opengeodeweb_microservice.schemas import get_schemas_dict
 from opengeodeweb_back import utils_functions
+from opengeodeweb_back.typed_route import typed_route
 
-schemas_dict = get_schemas_dict(os.path.join(os.path.dirname(__file__), "schemas"))
+# Local application imports
+from vease_back.routes import schemas
 
 routes = flask.Blueprint("vease_routes", __name__)
 flask_cors.CORS(routes)
 
 
-@routes.route(
-    schemas_dict["packages_versions"]["route"],
-    methods=schemas_dict["packages_versions"]["methods"],
-)
-def packages_versions() -> flask.Response:
-    utils_functions.validate_request(flask.request, schemas_dict["packages_versions"])
+@typed_route(routes, schemas.packages_versions_route)
+def packages_versions(
+    params: schemas.PackagesVersions,
+) -> schemas.PackagesVersionsResponse:
     list_packages = [
         "OpenGeode-core",
         "OpenGeode-Geosciences",
@@ -28,28 +25,26 @@ def packages_versions() -> flask.Response:
         "OpenGeode-IO",
         "Geode-Viewables",
     ]
-    return flask.make_response(
-        {"packages_versions": utils_functions.versions(list_packages)}, 200
+    return schemas.PackagesVersionsResponse(
+        packages_versions=[
+            schemas.packages_versions.PackagesVersion(
+                package=version["package"], version=version["version"]
+            )
+            for version in utils_functions.versions(list_packages)
+        ]
     )
 
 
-@routes.route(
-    schemas_dict["microservice_version"]["route"],
-    methods=schemas_dict["microservice_version"]["methods"],
-)
-def microservice_version() -> flask.Response:
-    utils_functions.validate_request(
-        flask.request, schemas_dict["microservice_version"]
-    )
+@typed_route(routes, schemas.microservice_version_route)
+def microservice_version(
+    params: schemas.MicroserviceVersion,
+) -> schemas.MicroserviceVersionResponse:
     list_packages = ["vease-back"]
-    return flask.make_response(
-        {"microservice_version": utils_functions.versions(list_packages)[0]["version"]},
-        200,
+    return schemas.MicroserviceVersionResponse(
+        microservice_version=utils_functions.versions(list_packages)[0]["version"]
     )
 
 
-@routes.route(
-    schemas_dict["healthcheck"]["route"], methods=schemas_dict["healthcheck"]["methods"]
-)
-def healthcheck() -> flask.Response:
-    return flask.make_response({"message": "healthy"}, 200)
+@typed_route(routes, schemas.healthcheck_route)
+def healthcheck(params: schemas.Healthcheck) -> schemas.HealthcheckResponse:
+    return schemas.HealthcheckResponse(message="healthy")

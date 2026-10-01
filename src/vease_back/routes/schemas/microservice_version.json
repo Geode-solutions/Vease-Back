@@ -1,7 +1,21 @@
 {
-    "$id": "/vease_back/microservice_version",
-    "route": "/microservice_version",
-    "methods": ["GET"],
+  "$id": "/vease_back/microservice_version",
+  "route": "/microservice_version",
+  "methods": [
+    "GET"
+  ],
+  "type": "object",
+  "additionalProperties": false,
+  "response": {
     "type": "object",
+    "properties": {
+      "microservice_version": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "microservice_version"
+    ],
     "additionalProperties": false
   }
+}

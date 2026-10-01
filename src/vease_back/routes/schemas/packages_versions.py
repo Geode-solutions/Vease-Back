@@ -1,10 +1,39 @@
+from opengeodeweb_microservice.schemas import Route, load_schema
+from typing import List
 from dataclasses_json import DataClassJsonMixin
+from opengeodeweb_microservice.schemas import print_dataclass
 from dataclasses import dataclass
 
 
 @dataclass
 class PackagesVersions(DataClassJsonMixin):
     def __post_init__(self) -> None:
-        print(self, flush=True)
+        print_dataclass(self)
 
     pass
+
+
+@dataclass
+class PackagesVersion(DataClassJsonMixin):
+    def __post_init__(self) -> None:
+        print_dataclass(self)
+
+    package: str
+    version: str
+
+
+@dataclass
+class PackagesVersionsResponse(DataClassJsonMixin):
+    def __post_init__(self) -> None:
+        print_dataclass(self)
+
+    packages_versions: List[PackagesVersion]
+
+
+packages_versions_route = Route(
+    schema=load_schema(__file__),
+    params=PackagesVersions,
+    response=PackagesVersionsResponse,
+)
+
+__all__ = ["PackagesVersions", "PackagesVersionsResponse", "packages_versions_route"]

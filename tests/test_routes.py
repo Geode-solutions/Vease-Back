@@ -43,3 +43,15 @@ def test_healthcheck(client: FlaskClient) -> None:
     message = response.json["message"]
     assert type(message) is str
     assert message == "healthy"
+
+
+def test_every_route_is_typed() -> None:
+    from opengeodeweb_back.typed_route import TYPED_ROUTE_MARKER
+    from tests.conftest import app
+
+    for endpoint, view in app.view_functions.items():
+        if endpoint.split(".")[0] != "vease":
+            continue
+        assert getattr(
+            view, TYPED_ROUTE_MARKER, False
+        ), f"{endpoint} must be registered with @typed_route or @raw_route"

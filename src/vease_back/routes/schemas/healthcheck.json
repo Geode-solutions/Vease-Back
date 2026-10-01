@@ -1,7 +1,21 @@
 {
-    "$id": "/vease_back/healthcheck",
-    "route": "/healthcheck",
-    "methods": ["GET"],
+  "$id": "/vease_back/healthcheck",
+  "route": "/healthcheck",
+  "methods": [
+    "GET"
+  ],
+  "type": "object",
+  "additionalProperties": false,
+  "response": {
     "type": "object",
+    "properties": {
+      "message": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "message"
+    ],
     "additionalProperties": false
   }
+}
