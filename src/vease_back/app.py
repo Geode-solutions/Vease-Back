@@ -2,10 +2,10 @@
 
 # Third party imports
 import flask
-from opengeodeweb_back.app import create_app, run_server, register_ogw_back_blueprints
+from opengeodeweb_back.app import create_app, register_ogw_back_blueprints, run_server
 
 # Local application imports
-import vease_back.routes.blueprint_vease as blueprint_vease
+from vease_back.routes import blueprint_vease
 
 
 def create_vease_back() -> flask.Flask:

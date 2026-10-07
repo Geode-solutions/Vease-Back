@@ -2,7 +2,7 @@
 
 # Third party imports
 import flask
-import flask_cors  # type: ignore
+import flask_cors  # type: ignore[import-untyped]
 from opengeodeweb_back import utils_functions
 from opengeodeweb_back.typed_route import typed_route
 
@@ -15,7 +15,7 @@ flask_cors.CORS(routes)
 
 @typed_route(routes, schemas.packages_versions_route)
 def packages_versions(
-    params: schemas.PackagesVersions,
+    _params: schemas.PackagesVersions,
 ) -> schemas.PackagesVersionsResponse:
     list_packages = [
         "OpenGeode-core",
@@ -37,7 +37,7 @@ def packages_versions(
 
 @typed_route(routes, schemas.microservice_version_route)
 def microservice_version(
-    params: schemas.MicroserviceVersion,
+    _params: schemas.MicroserviceVersion,
 ) -> schemas.MicroserviceVersionResponse:
     list_packages = ["vease-back"]
     return schemas.MicroserviceVersionResponse(
@@ -46,5 +46,5 @@ def microservice_version(
 
 
 @typed_route(routes, schemas.healthcheck_route)
-def healthcheck(params: schemas.Healthcheck) -> schemas.HealthcheckResponse:
+def healthcheck(_params: schemas.Healthcheck) -> schemas.HealthcheckResponse:
     return schemas.HealthcheckResponse(message="healthy")
