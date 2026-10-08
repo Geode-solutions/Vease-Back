@@ -1,18 +1,18 @@
 # Standard library imports
-import time
-import shutil
 import os
+import shutil
+import time
+from collections.abc import Generator
 from pathlib import Path
-from typing import Generator
 
 # Third party imports
 import pytest
 from flask.testing import FlaskClient
+from opengeodeweb_microservice.database.connection import get_session, init_database
+from opengeodeweb_microservice.database.data import Data
 
 # Local application imports
 from vease_back.app import create_vease_back
-from opengeodeweb_microservice.database.connection import init_database, get_session
-from opengeodeweb_microservice.database.data import Data
 
 TEST_ID = "1"
 
@@ -35,8 +35,8 @@ def configure_test_environment() -> Generator[None, None, None]:
     app.config["DATA_FOLDER_PATH"] = data_folder
     app.config["UPLOAD_FOLDER_PATH"] = "./tests/data/"
 
-    db_path = os.path.join(data_folder, "project.db")
-    os.makedirs(os.path.dirname(db_path), exist_ok=True)
+    db_path = Path(data_folder) / "project.db"
+    db_path.parent.mkdir(parents=True, exist_ok=True)
     app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{db_path}"
 
     init_database(db_path)
@@ -44,12 +44,11 @@ def configure_test_environment() -> Generator[None, None, None]:
 
     yield
 
-    if os.path.exists(data_folder):
-        shutil.rmtree(data_folder, ignore_errors=True)
+    shutil.rmtree(data_folder, ignore_errors=True)
 
 
 @pytest.fixture
-def client() -> Generator[FlaskClient, None, None]:
+def client() -> FlaskClient:
     app.config["REQUEST_COUNTER"] = 0
     app.config["LAST_REQUEST_TIME"] = time.time()
     client = app.test_client()
@@ -59,7 +58,7 @@ def client() -> Generator[FlaskClient, None, None]:
             "HTTP_ACCEPT": "application/json",
         }
     )
-    yield client
+    return client
 
 
 @pytest.fixture(autouse=True)
@@ -71,12 +70,9 @@ def clean_database() -> Generator[None, None, None]:
             session.commit()
     yield
     with app.app_context():
-        try:
-            session = get_session()
-            if session:
-                session.rollback()
-        except Exception:
-            pass
+        session = get_session()
+        if session:
+            session.rollback()
 
 
 @pytest.fixture
