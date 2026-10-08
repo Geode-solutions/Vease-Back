@@ -50,6 +50,6 @@ def test_every_route_is_typed() -> None:
     for endpoint, view in app.view_functions.items():
         if endpoint.split(".")[0] != "vease":
             continue
-        assert getattr(
-            view, TYPED_ROUTE_MARKER, False
-        ), f"{endpoint} must be registered with @typed_route or @raw_route"
+        assert getattr(view, TYPED_ROUTE_MARKER, False), (
+            f"{endpoint} must be registered with @typed_route or @raw_route"
+        )
