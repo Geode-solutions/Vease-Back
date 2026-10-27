@@ -1,11 +1,14 @@
 # Standard library imports
+from typing import TYPE_CHECKING
 
 # Third party imports
-import flask
 from opengeodeweb_back.app import create_app, register_ogw_back_blueprints, run_server
 
 # Local application imports
 from vease_back.routes import blueprint_vease
+
+if TYPE_CHECKING:
+    import flask
 
 
 def create_vease_back() -> flask.Flask:
