@@ -11,6 +11,7 @@ RUN pyinstaller \
     --onefile \
     --collect-data opengeodeweb_back \
     --collect-data vease_back \
+    --collect-data opengeode \
     --recursive-copy-metadata vease_back src/vease_back/app.py \
     --distpath dist \
     --name vease-back \
